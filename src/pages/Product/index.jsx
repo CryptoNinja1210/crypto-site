@@ -8,7 +8,7 @@ export default function Product() {
   return (
     <Layout>
       <div>
-        <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] bg-no-repeat  w-full h-screen flex justify-center bg-[rgba(3,51,96,0.5)]">
+        <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] bg-no-repeat  w-full h-screen flex justify-center ">
           <Slide duration={2000} direction="top">
             <div className="lg:w-[1170px] w-full h-[668px] p-4 mt-[300px]">
               <p className="text-white text-[2.5rem] pt-10 pb-5">

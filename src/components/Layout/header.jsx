@@ -152,7 +152,7 @@ const Header = () => {
                         onClick={() => goToPage(page.url)}
                         sx={{
                           z: 1,
-                          fontFamily: "Playfair Display",
+                          fontFamily: "sans-serif",
                           fontWeight: "600",
                           textTransform: "none",
                           px: "21px",
@@ -181,7 +181,7 @@ const Header = () => {
                     className="mx-4 my-auto p-2 rounded-md bg-blue-600 hover:bg-blue-500 cursor-pointer"
                     onClick={() => goToPage('/sign-in')}
                   >
-                    Investors SignIn
+                    Investors Sign In
                   </div>
                   {/* //IconButton */}
                   {/* <div className="flex mx-[14px]">
@@ -267,7 +267,7 @@ const Header = () => {
                             onClick={() => goToPage(page.url)}
                           >
                             <ListItemText
-                              sx={{ fontFamily: "Playfair Display" }}
+                              sx={{ fontFamily: "sans-serif" }}
                               className="text-[#033360]"
                               primary={page.name}
                             />

@@ -53,12 +53,12 @@ export default function Footer() {
               Subscribe to our newsletter and updates .
             </div>
             <input
-              className="my-[10.5px] py-2 px-4 w-full"
+              className="my-[10.5px] py-2 px-4 w-full text-gray-600"
               placeholder="Full name"
               type="text"
             />
             <input
-              className="my-[10.5px] py-2 px-4 w-full"
+              className="my-[10.5px] py-2 px-4 w-full text-gray-600"
               placeholder="Email address"
               type="text"
             />

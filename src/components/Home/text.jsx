@@ -7,7 +7,13 @@ export default function Text({ title, content }) {
       {/* <div className="mb-3 text-base text-black">
         Disclaimer: commodity trading involves a substantial risk of loss.{content2}
       </div> */}
-      <Button sx={{ bgcolor: "#033360", color: "white" }} className="w-33 h-12">
+      <Button 
+        sx={{
+          color: "white",
+          bgcolor: "#00306e",
+          "&:hover": { bgcolor: "#00306e " },
+        }}
+        className="w-33 h-12">
         LEARN MORE
       </Button>
     </div>

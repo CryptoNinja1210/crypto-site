@@ -1,6 +1,5 @@
 import Layout from "../../components/Layout";
 import { Slide } from "react-awesome-reveal";
-import { Fade } from "react-awesome-reveal";
 import { PeterInfo } from "../../data";
 
 export default function Portfolio() {

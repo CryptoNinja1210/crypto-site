@@ -22,7 +22,6 @@ export const ContactInfo = [
   { name: "Last Name" },
   { name: "Company Name" },
   { name: "Company" },
-  { name: "Country" },
 ];
 
 export const ContactFrom = [
