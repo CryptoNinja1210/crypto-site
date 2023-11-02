@@ -148,3 +148,69 @@ export const PeterInfo = [
       "Dr. Peter has also made strategic investments in several blockchain- related startups and understands the market strongly.",
   },
 ];
+
+export const Companies =[
+  {
+    logo: '/images/web3Fortune_logo.jpg',
+    name: 'W3 Fortune',
+    description: 'Singapore-based startup W3 Fortune PTE. LTD. (led by CEO Takashi Sugai) has raised 120 million yen in seed round funding from Relic Inc. and angel investors; its first project to be released will be CatRescue collectible NFTs.'
+
+  },
+  {
+    logo: '',
+    name: 'Onyx Arches',
+    description: 'OXA is the new-age, blockchain-based crypto payment solution for the Travel & Hospitality industry. Tourists, adventurers, business travelers – all of them will be using OXA token and Onyx Arches platform to make secure and fast payments for flights, trains and hotels worldwide.'
+
+  },
+  {
+    logo: '',
+    name: 'FishVeg',
+    description: 'Growing Fish and Veg using a symbiotic method and completely off-grid. Enjoy the food created for a sustainable World.'
+
+  },
+  {
+    logo: '',
+    name: 'Velvet Capital',
+    description: 'Velvet.Capital is a Cross-Chain DeFi Operating System that helps launch & manage on-chain funds & structured products (tokenized funds, portfolios, yield farming strategies, and more).'
+  },
+  {
+    logo: '',
+    name: 'Aave',
+    description: 'Aave is a decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion.'
+  },
+  {
+    logo: '',
+    name: 'Arbiturm',
+    description: 'Arbitrum is the leading Layer 2 technology that empowers you to explore and build in the largest Layer 1 ecosystem, Ethereum.'
+  },
+  {
+    logo: '',
+    name: 'Polkadot',
+    description: 'Polkadot enables cross-blockchain transfers of any type of data or asset, not just tokens.'
+  },
+  {
+    logo: '',
+    name: 'Balancer',
+    description: 'Balancer is the epitome of technical excellence and innovation in the DeFi space. '
+  },
+  {
+    logo: '',
+    name: 'Numerai',
+    description: 'Numerai is a data science competition where you build machine learning models to predict the stock market.'
+  },
+  {
+    logo: '',
+    name: 'Sui',
+    description: 'Sui is a Layer 1 blockchain and smart contract platform designed to make digital asset ownership fast, private, secure, and accessible to everyone.'
+  },
+  {
+    logo: '',
+    name: 'Sol',
+    description: 'Solana is a blockchain platform which uses a proof-of-stake mechanism to provide smart contract functionality. Its native cryptocurrency is SOL. '
+  },
+  {
+    logo: '',
+    name: 'Matic',
+    description: 'MATIC is Polygon&apos;s native cryptocurrency token. Polygon plasma chains run on the PoS consensus mechanism.'
+  }
+]

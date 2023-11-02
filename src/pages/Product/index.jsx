@@ -6,10 +6,10 @@ export default function Product() {
   return (
     <Layout>
       <div>
-        <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] bg-no-repeat  w-full h-screen flex justify-center ">
+        <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] flex justify-center ">
           <Slide duration={2000} direction="top">
-            <div className="lg:w-[1170px] w-full h-[668px] p-4 mt-[300px]">
-              <p className="text-white text-[2.5rem] pt-10 pb-5">
+            <div className="lg:w-[1170px] w-full  p-4 my-32">
+              <p className="text-white text-[2.5rem]  pb-5">
                 Crypto Market-Neutral
               </p>
               <p className="text-white text-[1.25rem]">
