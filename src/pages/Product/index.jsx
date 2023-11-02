@@ -1,6 +1,4 @@
-import { Button, InputBase } from "@mui/material";
 import Layout from "../../components/Layout";
-import { ContactInfo } from "../../data";
 import { Terms } from "../../data";
 import { Slide } from "react-awesome-reveal";
 
@@ -139,64 +137,7 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="w-full bg-[#eee] flex justify-center">
-        <div className="lg:w-[1170px] w-full py-6 px-4 ">
-          <p className="mt-6 mb-5 text-2xl">Contact Form</p>
-          <div className="text-[16px] mb-3">
-            <p className="text-[black]">
-              For more information on our products, please fill out the form
-              below. . A member of our team will be in touch with you shortly.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 text-bold text-[#337ab7]">
-            {ContactInfo.map((item) => (
-              <div key={item.name + "_product"} className="mb-3">
-                <p className="mb-1 text-base text-bold text-[#3298eb]">
-                  {item.name}
-                </p>
-                <input
-                  className="w-full h-11 mt-1 py-[10px] px-5"
-                  placeholder={item.name}
-                  type="text"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="mb-3">
-            <label> Message (optional)</label>
-            <InputBase
-              id="user_message"
-              multiline
-              rows={7}
-              variant="filled"
-              placeholder=""
-              sx={{
-                width: "100%",
-                height: "200px",
-                border: "1px solid #CAD0D8",
-                "&focus": { border: "1px solid black" },
-                "&active": { border: "1px solid black" },
-                borderRadius: "10px",
-                background: "#F9FBFF",
-                boxSizing: "border-box",
-                mt: "4px",
-                mb: "24px",
-                p: "11px 21px",
-              }}
-            />
-          </div>
-          <Button
-            sx={{
-              color: "white",
-              bgcolor: "#00306e",
-              "&:hover": { bgcolor: "#00306e " },
-            }}
-            className="mt-[10px] mb-[14px] py-3 px-5 w-[94px] h-[47px]"
-          >
-            SUBMIT
-          </Button>
-        </div>
-      </div>
+      
     </Layout>
   );
 }

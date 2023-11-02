@@ -10,7 +10,7 @@ export default function Contacts() {
     <Layout>
       {/* Contact begins */}
       <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-screen flex justify-center">
-        <div className="lg:w-[1170px] w-full p-4 mt-[200px]">
+        <div className="lg:w-[1170px] w-full p-4 mt-36">
           <p className="mt-6 mb-5 text-2xl text-white">Contact Us</p>
           <div className="text-[16px] mb-3">
             <p className="text-white">
