@@ -11,7 +11,7 @@ export default function Contacts() {
       {/* Contact begins */}
       <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full flex justify-center">
         <div className="lg:w-[1170px] w-full p-4 mt-36 mb-7">
-          <p className="mt-6 mb-5 text-2xl text-white">Contact Us</p>
+          <p className="mb-5 text-2xl text-white">Contact Us</p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div className="text-[16px] text-white mb-3 self-center">
               <p className="py-4">
