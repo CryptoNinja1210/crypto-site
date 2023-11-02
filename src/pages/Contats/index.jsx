@@ -1,4 +1,5 @@
 import { Button, InputBase } from "@mui/material";
+import { Slide } from "react-awesome-reveal";
 import Layout from "../../components/Layout";
 import { ContactInfo } from "../../data";
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
@@ -8,23 +9,31 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 export default function Contacts() {
   return (
     <Layout>
+
+      <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-80 flex justify-center">
+        <div className="lg:w-[1170px] w-full px-4 self-center">
+          <Slide duration={2000} triggerOnce direction="right">
+            <p className="text-white text-[2.5rem] pt-10 pb-5">Contact Us</p>
+            <p className="text-white text-[1.25rem]">
+              Contact us now by filling out the contact form below for more info
+              regarding our products and services.
+            </p>
+          </Slide>
+        </div>
+      </div>
+
       {/* Contact begins */}
-      <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full flex justify-center">
-        <div className="lg:w-[1170px] w-full p-4 mt-36 mb-7">
-              <p className="mb-5 text-3xl text-white">Contact Us</p>
+      <div className="bg-[#eee] w-full flex justify-center">
+        <div className="lg:w-[1170px] w-full p-4 mt-16 md:mt-24">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            <div className="text-white text-[16px] mb-3 mr-5">
-              <p className="py-4">
-                Contact us now by filling out the contact form below for more info
-                regarding our products and services.
-              </p>
+            <div className=" text-[16px] mr-5">
               <p className="py-4">
                 For a complete list of{" "}
-                <span className="text-slate-400">contact</span> information, visit
+                <span className="text-[#01547a]">contact</span> information, visit
                 our contact page.
               </p>
             </div>
-            {/* <div className="text-[16px] text-white mb-3 self-center">
+            {/* <div className="text-[16px]  mb-3 self-center">
               <p className="py-4">
                 Cactus Custoody is trusted qualified custodian for institutional digital asset management and financial services. 
               </p>
@@ -42,7 +51,7 @@ export default function Contacts() {
               <div className="">
                 {ContactInfo.map((item) => (
                   <div key={item.name} className="mb-3">
-                    <span className="mb-1 text-bold text-white text-base">
+                    <span className="mb-1 text-bold  text-base">
                       {item.name} 
                     </span><span className="text-red-700"> * </span>
                     <input
@@ -53,8 +62,8 @@ export default function Contacts() {
                 ))}
               </div>
               <div className="">
-                <div className="my-3">
-                  <span className="mb-1 text-bold text-white text-base">
+                <div className="my-8">
+                  <span className="mb-1 text-bold  text-base">
                     Country
                   </span><span className="text-red-600"> * </span>
                   <select id="countries" className="bg-gray-50 border text-gray-900 text-sm focus:ring-blue-500 focus:border-gray-600 block w-full p-2.5 h-12 ">
@@ -70,7 +79,7 @@ export default function Contacts() {
           </div>
 
           <div className="mb-3">
-            <label className="text-white"> Message (optional)</label>
+            <label className=""> Message (optional)</label>
             <InputBase
               id="user_message"
               multiline
