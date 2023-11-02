@@ -71,7 +71,7 @@ export default function Contacts() {
                 Cactus Custoody is trusted qualified custodian for institutional digital asset management and financial services. 
               </p>
               <p className="py-4">
-                We will strictly protect your privacy in accordance with our <a className="underline text-gray-400" href="#policy">privacy policy</a>
+                We will strictly protect your privacy in accordance with our <a className="underline text-blue-400" href="#policy">privacy policy</a>
               </p>
             </div>
             <div>
@@ -163,6 +163,7 @@ export default function Contacts() {
           <div className="mb-3">
             <label className=""> Message (optional)</label>
             <InputBase
+            className="focus:outline-black"
               id="user_message"
               multiline
               rows={7}
@@ -172,9 +173,6 @@ export default function Contacts() {
                 width: "100%",
                 height: "200px",
                 border: "1px solid #CAD0D8",
-                "&:focus": {
-                  borderColor: "black",
-                },
                 borderRadius: "10px",
                 background: "#F9FBFF",
                 boxSizing: "border-box",
