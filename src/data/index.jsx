@@ -22,10 +22,10 @@ export const HeaderPages = [
 ];
 
 export const ContactInfo = [
+  { name: 'Company Name'},
+  { name: 'Company Website'},
   { name: "First Name" },
   { name: "Last Name" },
-  { name: "Company Name" },
-  { name: "Company" },
 ];
 
 export const ContactFrom = [
