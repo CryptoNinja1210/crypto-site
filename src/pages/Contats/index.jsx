@@ -12,47 +12,52 @@ export default function Contacts() {
       <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full flex justify-center">
         <div className="lg:w-[1170px] w-full p-4 mt-36 mb-7">
           <p className="mt-6 mb-5 text-2xl text-white">Contact Us</p>
-          <div className="text-[16px] text-white mb-3">
-            <p className=" py-3">
-              Cactus Custoody is trusted qualified custodian for institutional digital asset management and financial services. 
-            </p>
-            <p className="py-3">
-              Reach out to learn more about our services,schedule a demo, or explore a partnership with us. Please complete the form below and our sales team will be in touch shortly. 
-            </p>
-            <p className="py-3">
-              Cactus Custoody is trusted qualified custodian for institutional digital asset management and financial services. 
-            </p>
-            <p className="py-3">
-              We will strictly protect your privacy in accordance with our <a className="underline text-gray-400" href="#policy">privacy policy</a>
-            </p>
-          </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            {ContactInfo.map((item) => (
-              <div key={item.name} className="mb-3">
-                <span className="mb-1 text-bold text-white text-base">
-                  {item.name} 
-                </span><span className="text-red-700"> * </span>
-                <input
-                  className="w-full h-11 mt-1 py-[10px] px-5"
-                  type="text"
-                />
+            <div className="text-[16px] text-white mb-3 self-center">
+              <p className="py-4">
+                Cactus Custoody is trusted qualified custodian for institutional digital asset management and financial services. 
+              </p>
+              <p className="py-4">
+                Reach out to learn more about our services,schedule a demo, or explore a partnership with us. Please complete the form below and our sales team will be in touch shortly. 
+              </p>
+              <p className="py-4">
+                Cactus Custoody is trusted qualified custodian for institutional digital asset management and financial services. 
+              </p>
+              <p className="py-4">
+                We will strictly protect your privacy in accordance with our <a className="underline text-gray-400" href="#policy">privacy policy</a>
+              </p>
+            </div>
+            <div>
+              <div className="">
+                {ContactInfo.map((item) => (
+                  <div key={item.name} className="mb-3">
+                    <span className="mb-1 text-bold text-white text-base">
+                      {item.name} 
+                    </span><span className="text-red-700"> * </span>
+                    <input
+                      className="w-full h-11 mt-1 py-[10px] px-5"
+                      type="text"
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            <div className="my-3">
-              <span className="mb-1 text-bold text-white text-base">
-                Country
-              </span><span className="text-red-600"> * </span>
-              <select id="countries" className="bg-gray-50 border text-gray-900 text-sm focus:ring-blue-500 focus:border-gray-600 block w-full p-2.5 h-12 ">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-              </select>
+              <div className="">
+                <div className="my-3">
+                  <span className="mb-1 text-bold text-white text-base">
+                    Country
+                  </span><span className="text-red-600"> * </span>
+                  <select id="countries" className="bg-gray-50 border text-gray-900 text-sm focus:ring-blue-500 focus:border-gray-600 block w-full p-2.5 h-12 ">
+                    <option defaultValue={1}>Choose a country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
+
           <div className="mb-3">
             <label className="text-white"> Message (optional)</label>
             <InputBase
