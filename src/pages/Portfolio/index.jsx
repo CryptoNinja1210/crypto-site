@@ -35,11 +35,13 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {Companies.map((data) => (
               <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-700 ease-in-out border-[#eee] bg-white w-52 h-70 object-cover items-center">
-                <img
-                  className="w-2/3"
-                  src={data.logo}
-                  alt=""
-                />
+                <div className="w-full h-20 flex">
+                  <img
+                    className="object-contain h-16 mx-auto my-auto"
+                    src={data.logo}
+                    alt=""
+                  />
+                </div>
                 <div className="flex flex-col overflow-hidden text-center">
                   <p className="font-sans font-bold pt-5">{data.name}</p>
                   <p className="mt-2 font-sans p-1 line-clamp-5">
