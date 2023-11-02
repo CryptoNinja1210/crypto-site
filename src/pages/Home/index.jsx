@@ -71,11 +71,10 @@ export default function Home() {
           <div className="lg:w-2/5">
             <div className="py-24 px-4">
               <div className=" text-[#bedaf4] text-3xl py-7">
-                Bluequant Accelerator
+                Crypto Market Maker for Token Projects and Cryptocurrency Exchanges
               </div>
               <div className="mb-3 text-base text-white">
-                Focused on Investment capital to exceptional proprietary teams
-                enabling them to manage their digital assets investment process.
+                Crypto Market Making. We provide you the liquidity needed to grow your token project and cryptocurrency exchange.
               </div>
               <Button
                 sx={{
@@ -195,7 +194,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-[#eee] flex justify-center">
+      {/* <div className="w-full bg-[#eee] flex justify-center">
         <div className="flex flex-col md:flex-row justify-end">
           <div className="lg:w-2/5">
             <Text
@@ -211,7 +210,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="w-full bg-white flex justify-center">
         <div className="md:py-24 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
