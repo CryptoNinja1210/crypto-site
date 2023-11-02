@@ -3,8 +3,13 @@ import Layout from "../../components/Layout";
 import Text from "../../components/Home/text";
 import { Slide } from "react-awesome-reveal";
 import { Fade } from "react-awesome-reveal";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  let navigate = useNavigate();
+  const goTopage = (e) => {
+    navigate(e);
+  }
   return (
     <Layout>
 
@@ -37,6 +42,18 @@ export default function Home() {
                 through our actively managed sophisticated investment
                 products."
             />
+            <div className=" pb-16 px-4">
+              <Button 
+                onClick={() => {goTopage('/product')}}
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
           </div>
           <div className="lg:w-2/5 h-full w-full overflow-hidden">
             <img
@@ -55,6 +72,18 @@ export default function Home() {
               title="Investment capital"
               content="Focuses on investment in Web 3.0, Layer 2 and DApps combining DeFi, NFT or DAO elements"
             />
+            <div className=" pb-16 px-4">
+              <Button 
+                onClick={() => {goTopage('/portfolio')}}
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
           </div>
           <div className="lg:w-2/5 h-full w-full overflow-hidden mr-24">
             <img
@@ -201,6 +230,15 @@ export default function Home() {
               title="Crypto Market Maker for Token Projects and Cryptocurrency Exchanges"
               content="Crypto Market Making. We provide you the liquidity needed to grow your token project and cryptocurrency exchange."
             />
+            <Button 
+              sx={{
+                color: "white",
+                bgcolor: "#00306e",
+                "&:hover": { bgcolor: "#00306e " },
+              }}
+              className="w-33 h-12">
+              LEARN MORE
+            </Button>
           </div>
           <div className="lg:w-2/5 h-full w-full overflow-hidden">
             <img

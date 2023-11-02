@@ -6,7 +6,7 @@ export default function Text({ title, content }) {
       <div className="mb-3 text-base text-black">{content}</div>
       {/* <div className="mb-3 text-base text-black">
         Disclaimer: commodity trading involves a substantial risk of loss.{content2}
-      </div> */}
+      </div>
       <Button 
         sx={{
           color: "white",
@@ -15,7 +15,7 @@ export default function Text({ title, content }) {
         }}
         className="w-33 h-12">
         LEARN MORE
-      </Button>
+      </Button> */}
     </div>
   );
 }
