@@ -14,6 +14,10 @@ export const HeaderPages = [
   {
     name: "PORTFOLIO",
     url: "/portfolio",
+  },
+  {
+    name: "CONTACTS",
+    url: "/contacts",
   }
 ];
 
@@ -123,7 +127,7 @@ export const FooterPages = [
     name: "Contact",
     data: [
       { name: "INGUIRY", url: "/" },
-      { name: "CONTACTS", url: "/" },
+      { name: "CONTACTS", url: "/contacts" },
       { name: "SCHEDULE", url: "/" },
       { name: "CALL", url: "/" },
     ],
