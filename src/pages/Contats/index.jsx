@@ -11,9 +11,20 @@ export default function Contacts() {
       {/* Contact begins */}
       <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full flex justify-center">
         <div className="lg:w-[1170px] w-full p-4 mt-36 mb-7">
-          <p className="mb-5 text-2xl text-white">Contact Us</p>
+              <p className="mb-5 text-3xl text-white">Contact Us</p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            <div className="text-[16px] text-white mb-3 self-center">
+            <div className="text-white text-[16px] mb-3 mr-5">
+              <p className="py-4">
+                Contact us now by filling out the contact form below for more info
+                regarding our products and services.
+              </p>
+              <p className="py-4">
+                For a complete list of{" "}
+                <span className="text-slate-400">contact</span> information, visit
+                our contact page.
+              </p>
+            </div>
+            {/* <div className="text-[16px] text-white mb-3 self-center">
               <p className="py-4">
                 Cactus Custoody is trusted qualified custodian for institutional digital asset management and financial services. 
               </p>
@@ -26,7 +37,7 @@ export default function Contacts() {
               <p className="py-4">
                 We will strictly protect your privacy in accordance with our <a className="underline text-gray-400" href="#policy">privacy policy</a>
               </p>
-            </div>
+            </div> */}
             <div>
               <div className="">
                 {ContactInfo.map((item) => (
