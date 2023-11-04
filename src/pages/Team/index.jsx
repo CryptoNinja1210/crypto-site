@@ -6,8 +6,8 @@ import { PeterInfo } from "../../data";
 export default function Team() {
   return (
     <Layout>
-      <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full h-80 flex justify-center">
-        <div className="lg:w-[1170px] w-full px-4 self-center">
+      <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full flex justify-center">
+        <div className="my-24 lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
             <p className="text-white text-[2.5rem] pt-10 pb-5">Team</p>
             <p className="text-white text-[1.25rem]">

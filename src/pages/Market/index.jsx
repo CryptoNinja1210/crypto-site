@@ -9,8 +9,8 @@ import { Button, InputBase } from "@mui/material";
 export default function Market() {
   return (
     <Layout>
-      <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full h-96 flex justify-center">
-        <div className="lg:w-[1170px] w-full px-4 self-center">
+      <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full flex justify-center">
+        <div className="my-20 lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
             <p className="text-white text-[2.5rem] pt-10 pb-5">
               Crypto Market Maker for Token Projects and Cryptocurrency Exchanges
@@ -23,8 +23,8 @@ export default function Market() {
       </div>
 
       <div className="z-[999] bg-white flex justify-center">
-        <div className="py-32  px-4 text-3xl w-[1170px] text-[#033360]">
-          <p className="pt-6 pb-5">Crypto currency market maker </p>
+        <div className="py-24  px-4 text-3xl w-[1170px] text-[#033360]">
+          <p className="my-6 pb-5">Crypto currency market maker </p>
           <p className="mb-3 text-base text-black">
             We are committed to excellence in offering premium market-making services, continuously advancing our expertise in algorithmic trading, and seamlessly integrating state-of-the-art technology across more than 100 exchanges. This unwavering dedication ensures that we provide unparalleled global market coverage, tailored to the unique and ever-evolving requirements of our esteemed clients, setting us apart in the financial industry.
           </p>
