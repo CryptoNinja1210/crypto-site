@@ -53,8 +53,8 @@ export default function Footer() {
             <div className="py-1 text-[15px] text-white">
               Subscribe to our newsletter and updates .
             </div>
-            <TextField size="small" className="w-full" sx={{my: '10.5px',bgcolor:'white'}} id="outlined-basic" label="Full name" variant="filled" />
-            <TextField size="small" className="w-full" sx={{bgcolor:'white'}} id="outlined-basic" label="Email address" variant="filled" />
+            <TextField size="small" className="w-full" sx={{my: '10.5px',bgcolor:'white'}} id="Full-name" label="Full name" variant="filled" />
+            <TextField size="small" className="w-full" sx={{bgcolor:'white'}} id="Email-address" label="Email address" variant="filled" />
             {/* <input
               className="my-[10.5px] py-2 px-4 w-full text-gray-600"
               placeholder="Full name"

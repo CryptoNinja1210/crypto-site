@@ -49,11 +49,12 @@ const LoginPage = () => {
 					Investors Login
 				</div>
 				<div className="max-w-md w-full h-auto px-4 py-8 bg-gray-200 rounded-md">
-					<form key='Email' className="mb-3">
+					<form autoComplete="" key='Email' className="mb-3">
 						<p className="mb-1 ml-2 text-bold text-base">
 							Email :
 						</p>
 						<input
+							id="email"
 							className="w-full invalid:bg-red-200 invalid:text-red-800 h-11 mt-1 py-[10px] px-5 rounded-md"
 							placeholder='Place your email here'
 							type="email"
@@ -72,6 +73,7 @@ const LoginPage = () => {
 						</p>
 						<div className="relative flex flex-col w-full">
 							<input
+								id="password"
 								className=" w-full h-11 mt-1 py-[10px] px-5 rounded-md"
 								placeholder='Place your password here'
 								type={isRevealed ? 'text' : 'password'}

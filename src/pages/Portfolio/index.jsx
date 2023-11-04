@@ -66,12 +66,13 @@ export default function Portfolio() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4 text-bold text-[#337ab7]">
-            {ContactInfo.map((item) => (
+            {ContactInfo.map((item,i) => (
               <div key={item.name + "_product"} className="mb-3">
                 <p className="mb-1 text-base text-bold text-[#3298eb]">
                   {item.name}
                 </p>
                 <input
+                  id={i+"contact"}
                   className="w-full h-11 mt-1 py-[10px] px-5"
                   placeholder={item.name}
                   type="text"
@@ -80,9 +81,9 @@ export default function Portfolio() {
             ))}
           </div>
           <div className="mb-3">
-            <label> Message (optional)</label>
+            <label htmlFor="user_message2"> Message (optional)</label>
             <InputBase
-              id="user_message"
+              id="user_message2"
               multiline
               rows={7}
               variant="filled"

@@ -99,6 +99,7 @@ export default function Contacts() {
                     </FormControl>*/}
                   </div> 
                   <Autocomplete
+                    autoComplete
                     id="country-select-demo"
                     sx={{ width: '100%', bgcolor: 'white'}}
                     options={countries}
@@ -154,12 +155,13 @@ export default function Contacts() {
                     </FormControl>
                   </div>
                 </div>
-                {ContactInfo.map((item) => (
+                {ContactInfo.map((item,i) => (
                   <div key={item.name} className="mb-3">
                     <span className="mb-1 text-bold  text-base">
                       {item.name} 
                     </span><span className="text-red-700"> * </span>
                     <input
+                      id={'contacts'+i}
                       className="border-[1px] border-slate-300 focus:outline-sky-600 w-full h-11 mt-1 py-[10px] px-5"
                       type="text"
                     />
@@ -171,6 +173,7 @@ export default function Contacts() {
                   Business Email
                 </span><span className="text-red-700"> * </span>
                 <input
+                  id="business-email"
                   className="border-[1px] border-slate-300 focus:outline-sky-600 w-full h-11 mt-1 py-[10px] px-5"
                   type="text"
                 />
@@ -179,17 +182,17 @@ export default function Contacts() {
                 <span className="mb-1 text-bold  text-base">
                   Phone number
                 </span><span className="text-red-600"> * </span>
-                <MuiTelInput sx={{width: '100%', bgcolor: 'white'}} defaultCountry="US" value={phone} onChange={handlePhone} />
+                <MuiTelInput id="phone-number" sx={{width: '100%', bgcolor: 'white'}} defaultCountry="US" value={phone} onChange={handlePhone} />
               </div>
             </div>
             
           </div>
 
           <div className="mb-3">
-            <label className=""> Message (optional)</label>
+            <label htmlFor="user_message1" className=""> Message (optional)</label>
             <InputBase
-            className="focus:outline-black"
-              id="user_message"
+              className="focus:outline-black"
+              id="user_message1"
               multiline
               rows={7}
               variant="filled"

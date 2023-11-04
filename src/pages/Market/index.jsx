@@ -39,7 +39,7 @@ export default function Market() {
           <div className="flex">
             <hr className="h-[5px] w-8 my-6 bg-black mx-auto" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols- md:grid-cols-2 lg:grid-cols-4">
             {Services.map((data) => (
               <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-700 ease-in-out border-[#eee] bg-white w-56 h-70 object-cover items-center">
                 <div className="w-full h-20 flex">
@@ -69,9 +69,9 @@ export default function Market() {
           {/* <div className="flex">
             <hr className="h-[5px] w-8 my-6 bg-black mx-auto" />
           </div> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {Exchanges.map((data) => (
-              <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto hover:scale-[120%] transition-all duration-700 ease-in-out after w-56 h-70 object-cover items-center">
+              <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto hover:scale-[120%] transition-all duration-700 ease-in-out after w-48 h-70 object-cover items-center">
                 <div className="w-full h-20 flex">
                   <img
                     className="object-contain h-16 mx-auto my-auto"

@@ -62,7 +62,7 @@ export default function Team() {
                   //   damping={1}
                   //   cascade
                   // >
-                    <p className="text-base mb-3">{item.content}</p>
+                    <p key={item.content} className="text-base mb-3">{item.content}</p>
                   // </Fade>
                 ))}
                {/* </Fade> */}
