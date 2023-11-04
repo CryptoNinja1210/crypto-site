@@ -322,10 +322,18 @@ export const Exchanges = [
 },
 {
   name: 'Crypto.com',
-  icon: 'icons/cryptocom.png'
+  icon: '/icons/cryptocom.png'
 },
 {
   name: 'Kraen',
-  icon: 'icons/kraken.png'
+  icon: '/icons/kraken.png'
+},
+{
+  name: 'LBank',
+  icon: '/icons/lbank.png'
+},
+{
+  name: 'Toolbit',
+  icon: '/icons/toolbit.png'
 }
 ]

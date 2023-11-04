@@ -66,9 +66,6 @@ export default function Market() {
           <p className="text-2xl mt-6 mb-5 text-center text-black">
             Partner Exchanges
           </p>
-          {/* <div className="flex">
-            <hr className="h-[5px] w-8 my-6 bg-black mx-auto" />
-          </div> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {Exchanges.map((data) => (
               <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto hover:scale-[120%] transition-all duration-700 ease-in-out after w-48 h-70 object-cover items-center">
@@ -87,6 +84,10 @@ export default function Market() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="flex-col">
+            <hr className="h-[4px] w-32 my-6 bg-black mx-auto" />
+            <p className="font-bold text-center">AND 100+ MORE</p>
           </div>
         </div>
       </div>
