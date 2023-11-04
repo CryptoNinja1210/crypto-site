@@ -75,13 +75,13 @@ export const Terms = [
   },
 ];
 
-export const Pages = [
-  { name: "TEAM", url: "/team" },
-  { name: "CAREERS", url: "/" },
-  { name: "INVESTORS APPROACH", url: "/" },
-  { name: "RISK MANAGEMENT", url: "/" },
-  { name: "TECHNOLOGY", url: "/" },
-];
+// export const Pages = [
+//   { name: "TEAM", url: "/team" },
+//   { name: "CAREERS", url: "/careers" },
+//   { name: "INVESTORS APPROACH", url: "/" },
+//   { name: "RISK MANAGEMENT", url: "/" },
+//   { name: "TECHNOLOGY", url: "/" },
+// ];
 
 export const Copyright = [
   {
@@ -102,7 +102,7 @@ export const FooterPages = [
     name: "About",
     data: [
       { name: "TEAM", url: "/team" },
-      { name: "CAREERS", url: "/" },
+      { name: "CAREERS", url: "/careers" },
       { name: "INVESTORS APPROACH", url: "/" },
       { name: "RISK MANAGEMENT", url: "/" },
       { name: "TECHNOLOGY", url: "/" },
@@ -336,4 +336,15 @@ export const Exchanges = [
   name: 'Toolbit',
   icon: '/icons/toolbit.png'
 }
+]
+
+export const CareerInfos = [
+  {name: 'Engineering'},
+  {name: 'Compliance office'},
+  {name: 'Business development'},
+  {name: 'Head operations'},
+  {name: 'Legal officer'},
+  {name: 'Software developer'},
+  {name: 'Software Designer'},
+  {name: 'Poftfoko Manger'}
 ]

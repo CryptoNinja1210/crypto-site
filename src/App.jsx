@@ -6,6 +6,7 @@ import Portfolio from "./pages/Portfolio";
 import SignIn from './pages/Login'
 import Contacts from "./pages/Contats";
 import Market from "./pages/Market";
+import Careers from "./pages/Careers";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/market" element={<Market />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
     </Router>
   );
