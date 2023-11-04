@@ -223,3 +223,22 @@ export const Companies =[
     description: 'Utherverse, Inc. is a metaverse and software development company preparing the commercial launch of its 4th-generation metaverse, called the “Utherverse.” The Utherverse is an immersive, interoperable, and synchronous virtual universe platform designed to change how we interact, work and play.'
   },
 ]
+
+export const Services = [
+  {
+    name: '30+ projects served',
+    icon: '/icons/project_service_icon.png'
+  },
+  {
+    name: '100 + Exchanges ',
+    icon: '/icons/exchange_icon.png'
+  },
+  {
+    name: '24/7 Daily Coverage ',
+    icon: '/icons/24daily_icon.jfif'
+  },
+  {
+    name: '4+ global offices',
+    icon: '/icons/global_office_icon.png'
+  }
+]

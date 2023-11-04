@@ -7,7 +7,7 @@ export default function Product() {
     <Layout>
       <div>
         <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] flex justify-center ">
-          <Slide duration={2000} direction="top">
+          {/* <Slide duration={2000} direction="top"> */}
             <div className="lg:w-[1170px] w-full  p-4 my-32">
               <p className="text-white text-[2.5rem]  pb-5">
                 Crypto Market-Neutral
@@ -17,7 +17,7 @@ export default function Product() {
                 independent of market directionality
               </p>
             </div>
-          </Slide>
+          {/* </Slide> */}
         </div>
       </div>
 

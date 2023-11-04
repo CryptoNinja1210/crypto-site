@@ -15,22 +15,22 @@ export default function Home() {
 
       <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-screen flex justify-center">
         <div className="w-[1170px] p-4 mt-[200px]">
-          <Slide duration={2000} direction="down">
+          {/* <Slide duration={2000} direction="down"> */}
             <p className="text-white text-[2.5rem] pt-10 pb-5">
               Leading Global Investment Manager and Crypto Market Maker
             </p>
-          </Slide>
+          {/* </Slide> */}
         </div>
       </div>
 
       <div className="bg-white flex justify-center">
-        <Fade cascade duration={2000}>
+        {/* <Fade cascade duration={2000}> */}
           <div className="py-32 md:pl-32 px-4 text-3xl lg:w-[1170px] text-[#033360]">
             We act as a trusted partner for institutions and individuals
             globally looking to deploy their capital and enhance their
             liquidity.
           </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
 
       <div className="w-full bg-[#eee] flex justify-center">
@@ -102,19 +102,22 @@ export default function Home() {
               <div className=" text-[#bedaf4] text-3xl py-7">
                 Crypto Market Maker for Token Projects and Cryptocurrency Exchanges
               </div>
-              <div className="mb-3 text-base text-white">
+              <div className="mb-5 text-base text-white">
                 Crypto Market Making. We provide you the liquidity needed to grow your token project and cryptocurrency exchange.
               </div>
-              <Button
-                sx={{
-                  color: "white",
-                  bgcolor: "#00306e",
-                  "&:hover": { bgcolor: "#00306e " },
-                }}
-                className="w-33 h-12"
-              >
-                LEARN MORE
-              </Button>
+              <div className=" pt-6 px-4">
+                <Button
+                  sx={{
+                    bgcolor: "white",
+                    color: "#00306e",
+                    "&:hover": { bgcolor: "gray" },
+                  }}
+                  onClick={() => {goTopage('/market')}}
+                  className="w-33 h-12"
+                >
+                  LEARN MORE
+                </Button>
+              </div>
             </div>
           </div>
           <div className="lg:w-2/5 h-full w-full overflow-hidden">

@@ -37,13 +37,13 @@ export default function Contacts() {
 
       <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-80 flex justify-center">
         <div className="lg:w-[1170px] w-full px-4 self-center">
-          <Slide duration={2000} triggerOnce direction="right">
+          {/* <Slide duration={2000} triggerOnce direction="right"> */}
             <p className="text-white text-[2.5rem] pt-10 pb-5">Contact Us</p>
             <p className="text-white text-[1.25rem]">
               Contact us now by filling out the contact form below for more info
               regarding our products and services.
             </p>
-          </Slide>
+          {/* </Slide> */}
         </div>
       </div>
 

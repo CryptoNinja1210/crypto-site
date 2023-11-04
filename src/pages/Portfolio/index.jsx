@@ -12,7 +12,7 @@ export default function Portfolio() {
     <Layout>
       <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full h-80 flex justify-center">
         <div className="lg:w-[1170px] w-full px-4 self-center">
-          <Slide duration={2000} triggerOnce direction="right">
+          {/* <Slide duration={2000} triggerOnce direction="right"> */}
             <p className="text-white text-[2.5rem] pt-10 pb-5">
               Investment capital
             </p>
@@ -20,7 +20,7 @@ export default function Portfolio() {
               Focuses on investment in Web 3.0, Layer 2 and DApps combining
               DeFi, NFT or DAO elements
             </p>
-          </Slide>
+          {/* </Slide> */}
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export default function Portfolio() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {Companies.map((data) => (
-              <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-700 ease-in-out border-[#eee] bg-white w-52 h-70 object-cover items-center">
+              <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-700 ease-in-out border-[#eee] bg-white w-56 h-70 object-cover items-center">
                 <div className="w-full h-20 flex">
                   <img
                     className="object-contain h-16 mx-auto my-auto"
