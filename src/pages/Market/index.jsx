@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
 import { Slide } from "react-awesome-reveal";
-import { ContactInfo, Services } from "../../data";
+import { ContactInfo, Exchanges, Services } from "../../data";
 import { Companies } from "../../data";
 import { Button, InputBase } from "@mui/material";
 
@@ -70,8 +70,8 @@ export default function Market() {
             <hr className="h-[5px] w-8 my-6 bg-black mx-auto" />
           </div> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            {Services.map((data) => (
-              <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-700 ease-in-out bg-[#eee] border-white w-56 h-70 object-cover items-center">
+            {Exchanges.map((data) => (
+              <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto hover:scale-[120%] transition-all duration-700 ease-in-out after w-56 h-70 object-cover items-center">
                 <div className="w-full h-20 flex">
                   <img
                     className="object-contain h-16 mx-auto my-auto"

@@ -112,7 +112,7 @@ export const FooterPages = [
     name: "Products",
     data: [
       { name: "CRYPTO MARKET-NEUTRAL", url: "/product" },
-      { name: "CRYPTO MARKET", url: "/product" },
+      { name: "CRYPTO MARKET", url: "/market" },
       { name: "MAKING", url: "/product" },
     ],
   },
@@ -241,4 +241,91 @@ export const Services = [
     name: '4+ global offices',
     icon: '/icons/global_office_icon.png'
   }
+]
+
+export const Exchanges = [
+{
+  name: 'Binance',
+  icon: '/icons/binance.png'
+},
+{
+  name: 'Bithumb',
+  icon: '/icons/bithumb.png',
+},
+{
+  name: 'Okex',
+  icon: '/icons/okex.png'
+},
+{
+  name: 'Kucoin',
+  icon: '/icons/kucoin.png'
+},
+{
+  name: 'binance.us',
+  icon: '/icons/binanceus.png'
+},
+{
+  name: 'Spooky Swap',
+  icon: '/icons/spookyswap.png'
+},
+{
+  name: 'Quickswap',
+  icon: '/icons/quickswap.jfif'
+},
+{
+  name: 'Deribit',
+  icon: '/icons/deribit.png'
+},
+{
+  name: 'Trader joe',
+  icon: '/icons/traderjoe.jfif'
+},
+{
+  name: 'MEXC',
+  icon: '/icons/mexc.jfif'
+},
+{
+  name: 'Bybit',
+  icon: '/icons/bybit.png'
+},
+{
+  name: 'UpBit',
+  icon: '/icons/upbit.png'
+},
+{
+  name: 'Gemini',
+  icon: '/icons/gemini.png'
+},
+{
+  name: 'Coinbase Pro',
+  icon: '/icons/coinbase_pro.png'
+},
+{
+  name: 'Pancake Swap',
+  icon: '/icons/pancakeswap.png'
+},
+{
+  name: 'Gate.io',
+  icon: '/icons/gateio.png'
+},
+{
+  name: 'Huobi Global',
+  icon: '/icons/huobi.png'
+},
+{
+  name: 'Uniswap',
+  icon: '/icons/uniswap.png'
+},
+{
+  name: 'Bitfinex',
+  icon: '/icons/bitfinex.png'
+},
+{
+  name: 'Crypto.com',
+  icon: 'icons/cryptocom.png'
+},
+{
+  name: 'Kraen',
+  icon: 'icons/kraken.png'
+}
 ]
