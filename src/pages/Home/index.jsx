@@ -1,8 +1,6 @@
-import { Button, InputBase } from "@mui/material";
+import { Button } from "@mui/material";
 import Layout from "../../components/Layout";
 import Text from "../../components/Home/text";
-import { Slide } from "react-awesome-reveal";
-import { Fade } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {

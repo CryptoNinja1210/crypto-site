@@ -1,8 +1,6 @@
 import Layout from "../../components/Layout";
-import { Slide } from "react-awesome-reveal";
-import { Fade } from "react-awesome-reveal";
-import { PeterInfo } from "../../data";
 import { CareerInfos } from "../../data";
+import { Button } from "@mui/material";
 
 export default function Careers() {
   return (
@@ -18,11 +16,121 @@ export default function Careers() {
         </div>
       </div>
 
-      <div className="bg-white flex justify-center">
-        <div className="py-32  px-4 text-3xl w-full lg:w-[1170px] text-[#033360]">
-          {CareerInfos.map((item, i) => (
-            <p key={item.name + "_i"} className="pt-6 pb-5">{   i+1 + '.' +item.name}</p>
-          ))}
+      <div className="bg-[#eee] flex justify-center">
+        <div className="py-20  px-4 text-3xl w-full lg:w-[1170px] text-[#033360]">
+          
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Engineering</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Compilance office</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Business development</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Head operations</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Legal officer</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Software developer</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Software Designer</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="bg-white my-5 flex justify-between">
+            <p className="self-center px-4">Portfolio</p>
+            <div className=" py-7 px-4">
+              <Button 
+                sx={{
+                  color: "white",
+                  bgcolor: "#00306e",
+                  "&:hover": { bgcolor: "#00306e " },
+                }}
+                className="w-33 h-12">
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
