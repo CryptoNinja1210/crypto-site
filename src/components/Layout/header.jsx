@@ -114,9 +114,9 @@ const Header = () => {
     };
   }, []);
 
-  const handleClickSignIn = () => {
-    return 
-  }
+  // const handleClickSignIn = () => {
+  //   return
+  // }
 
   return (
     <div>
@@ -136,10 +136,8 @@ const Header = () => {
             <Toolbar className="flex justify-center">
               <div className="flex h-16 w-full lg:w-[1170px] px-4 justify-between items-center">
                 <p
-                  className={`whitespace-nowrap ${
-                    scrollTriggered
-                      ? "text-[#033360]"
-                      : "text-[16px] text-white"
+                  className={` whitespace-nowrap ${
+                    scrollTriggered ? "text-[#033360]" : "text-[16px]"
                   }`}
                 >
                   P & A
@@ -178,8 +176,8 @@ const Header = () => {
                     </p>
                   </div>
                   <div
-                    className="mx-4 my-auto p-2 rounded-md bg-blue-600 hover:bg-blue-500 cursor-pointer"
-                    onClick={() => goToPage('/sign-in')}
+                    className="mx-4 my-auto p-2 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 cursor-pointer"
+                    onClick={() => goToPage("/sign-in")}
                   >
                     Investors Sign In
                   </div>

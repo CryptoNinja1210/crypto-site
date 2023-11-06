@@ -9,10 +9,12 @@ export default function Team() {
       <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full flex justify-center">
         <div className="my-24 lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
-            <p className="text-white text-[2.5rem] pt-10 pb-5">Team</p>
-            <p className="text-white text-[1.25rem]">
-              Our team brings you a substantial amount of experience
-            </p>
+          <p className="font-[Playfair] text-white text-[2.5rem] pt-10 pb-5">
+            Team
+          </p>
+          <p className="text-white text-[1.25rem]">
+            Our team brings you a substantial amount of experience
+          </p>
           {/* </Slide> */}
         </div>
       </div>
@@ -37,35 +39,37 @@ export default function Team() {
           <div className="grid md:grid-cols-3 grid-cols-1">
             <div className=" mt-8 px-4 object-contain">
               {/* <Slide duration={2000} direction="up"> */}
-                {/* <Fade duration={4000}> */}
-                  <img
-                    className="md:w-full w-[200px] h-[300px] md:h-full  object-contain"
-                    src="/images/Dr_Peter.jpg"
-                    alt=""
-                  />
-                {/* </Fade> */}
+              {/* <Fade duration={4000}> */}
+              <img
+                className="md:w-full w-[200px] h-[300px] md:h-full  object-contain"
+                src="/images/Dr_Peter.jpg"
+                alt=""
+              />
+              {/* </Fade> */}
               {/* </Slide> */}
             </div>
             <div className="self-center col-span-2 px-4 lg:ml-[97.5px]">
               {/* <Fade duration={2000} triggerOnce damping={1}> */}
-                <p className="my-5 text-4xl text-[#033360]">Dr. Peter</p>
-                <p className="my-4 text-[24px] text-black italic font-['Playfair Display']">
-                  Senior Advisor
-                </p>
+              <p className="my-5 text-4xl text-[#033360]">Dr. Peter</p>
+              <p className="my-4 text-[24px] text-black italic font-['Playfair Display']">
+                Senior Advisor
+              </p>
               {/* </Fade> */}
               {/* <Fade delay={1e3} triggerOnce cascade damping={1e-1}> */}
-                {PeterInfo.map((item, i) => (
-                  // <Fade
-                  //   triggerOnce
-                  //   key={"peter_" + i}
-                  //   delay={1e3 + i * 1000}
-                  //   damping={1}
-                  //   cascade
-                  // >
-                    <p key={item.content} className="text-base mb-3">{item.content}</p>
-                  // </Fade>
-                ))}
-               {/* </Fade> */}
+              {PeterInfo.map((item, i) => (
+                // <Fade
+                //   triggerOnce
+                //   key={"peter_" + i}
+                //   delay={1e3 + i * 1000}
+                //   damping={1}
+                //   cascade
+                // >
+                <p key={item.content} className="text-base mb-3">
+                  {item.content}
+                </p>
+                // </Fade>
+              ))}
+              {/* </Fade> */}
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import Layout from "../../components/Layout";
 import Text from "../../components/Home/text";
 import { useNavigate } from "react-router-dom";
@@ -7,27 +6,25 @@ export default function Home() {
   let navigate = useNavigate();
   const goTopage = (e) => {
     navigate(e);
-  }
+  };
   return (
     <Layout>
-
-      <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-screen flex justify-center">
+      <div className="bg-gradient-to-bl from-[#7bdcb5] from-1% via-[#04628d] via-70% to-98% to-[#003073] w-full h-screen flex justify-center">
         <div className="w-[1170px] p-4 mt-[200px]">
           {/* <Slide duration={2000} direction="down"> */}
-            <p className="text-white text-[2.5rem] pt-10 pb-5">
-              Leading Global Investment Manager and Crypto Market Maker
-            </p>
+          <p className=" font-[Playfair] text-white text-[2.5rem] pt-10 pb-5 ">
+            Leading Global Investment Manager and Crypto Market Maker
+          </p>
           {/* </Slide> */}
         </div>
       </div>
 
       <div className="bg-white flex justify-center">
         {/* <Fade cascade duration={2000}> */}
-          <div className="py-32 md:pl-32 px-4 text-3xl lg:w-[1170px] text-[#033360]">
-            We act as a trusted partner for institutions and individuals
-            globally looking to deploy their capital and enhance their
-            liquidity.
-          </div>
+        <div className="py-32 md:pl-32 px-4 text-3xl lg:w-[1170px] text-[#033360]">
+          We act as a trusted partner for institutions and individuals globally
+          looking to deploy their capital and enhance their liquidity.
+        </div>
         {/* </Fade> */}
       </div>
 
@@ -41,16 +38,14 @@ export default function Home() {
                 products."
             />
             <div className=" pb-16 px-4">
-              <Button 
-                onClick={() => {goTopage('/product')}}
-                sx={{
-                  color: "white",
-                  bgcolor: "#00306e",
-                  "&:hover": { bgcolor: "#00306e " },
+              <div
+                className="duration-500 w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl"
+                onClick={() => {
+                  goTopage("/product");
                 }}
-                className="w-33 h-12">
+              >
                 LEARN MORE
-              </Button>
+              </div>
             </div>
           </div>
           <div className="lg:w-2/5 h-full w-full overflow-hidden">
@@ -71,16 +66,14 @@ export default function Home() {
               content="Focuses on investment in Web 3.0, Layer 2 and DApps combining DeFi, NFT or DAO elements"
             />
             <div className=" pb-16 px-4">
-              <Button 
-                onClick={() => {goTopage('/portfolio')}}
-                sx={{
-                  color: "white",
-                  bgcolor: "#00306e",
-                  "&:hover": { bgcolor: "#00306e " },
+              <div
+                className=" duration-500 w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl"
+                onClick={() => {
+                  goTopage("/portfolio");
                 }}
-                className="w-33 h-12">
+              >
                 LEARN MORE
-              </Button>
+              </div>
             </div>
           </div>
           <div className="lg:w-2/5 h-full w-full overflow-hidden mr-24">
@@ -98,23 +91,22 @@ export default function Home() {
           <div className="lg:w-2/5">
             <div className="py-24 px-4">
               <div className=" text-[#bedaf4] text-3xl py-7">
-                Crypto Market Maker for Token Projects and Cryptocurrency Exchanges
+                Crypto Market Maker for Token Projects and Cryptocurrency
+                Exchanges
               </div>
               <div className="mb-5 text-base text-white">
-                Crypto Market Making. We provide you the liquidity needed to grow your token project and cryptocurrency exchange.
+                Crypto Market Making. We provide you the liquidity needed to
+                grow your token project and cryptocurrency exchange.
               </div>
               <div className=" pt-6 px-4">
-                <Button
-                  sx={{
-                    bgcolor: "white",
-                    color: "#00306e",
-                    "&:hover": { bgcolor: "gray" },
+                <div
+                  className="w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-[#00306e] bg-white hover:bg-gray-500 hover:drop-shadow-xl duration-300"
+                  onClick={() => {
+                    goTopage("/market");
                   }}
-                  onClick={() => {goTopage('/market')}}
-                  className="w-33 h-12"
                 >
                   LEARN MORE
-                </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -171,8 +163,8 @@ export default function Home() {
             <div className="px-4">
               <p className="text-2xl my-3">Global Network and Partnerships</p>
               <p className=" ">
-                We&apos;ve cultivated strong relationships with key players in the
-                cryptocurrency ecosystem, including exchanges, blockchain
+                We&apos;ve cultivated strong relationships with key players in
+                the cryptocurrency ecosystem, including exchanges, blockchain
                 projects, and industry influencers. This network grants us
                 access to exclusive insights, early-stage investment
                 opportunities, and valuable partnerships that enhance our
@@ -192,14 +184,14 @@ export default function Home() {
             <hr className="h-[5px] w-8 my-6 bg-white mx-auto" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-100 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-300 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="m-auto w-full "
                 src="/images/partner1.png"
                 alt=""
               />
             </div>
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-100 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-300 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="m-auto sm:scale-x-150 h-full"
                 src="/images/partner2.jpg"

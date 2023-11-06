@@ -5,36 +5,35 @@ import { ContactInfo } from "../../data";
 import { Companies } from "../../data";
 import { Button, InputBase } from "@mui/material";
 
-
-
 export default function Portfolio() {
   return (
     <Layout>
       <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full flex justify-center">
         <div className="my-24 lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
-            <p className="text-white text-[2.5rem] pt-10 pb-5">
-              Investment capital
-            </p>
-            <p className="text-white text-[1.25rem]">
-              Focuses on investment in Web 3.0, Layer 2 and DApps combining
-              DeFi, NFT or DAO elements
-            </p>
+          <p className="font-[Playfair] text-white text-[2.5rem] pt-10 pb-5">
+            Investment capital
+          </p>
+          <p className="text-white text-[1.25rem]">
+            Focuses on investment in Web 3.0, Layer 2 and DApps combining DeFi,
+            NFT or DAO elements
+          </p>
           {/* </Slide> */}
         </div>
       </div>
 
       <div className="w-full bg-white flex justify-center">
         <div className="py-20 px-4 w-full lg:w-[1170px]">
-          <p className="text-2xl mt-6 mb-5 text-center text-black">
-            Portfolio
-          </p>
+          <p className="text-2xl mt-6 mb-5 text-center text-black">Portfolio</p>
           <div className="flex">
             <hr className="h-[5px] w-8 my-6 bg-black mx-auto" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {Companies.map((data) => (
-              <div key={data.name} className="my-7 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-700 ease-in-out border-[#eee] bg-white w-56 h-70 object-cover items-center">
+              <div
+                key={data.name}
+                className="my-7 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-700 ease-in-out border-[#eee] bg-white w-56 h-70 object-cover items-center"
+              >
                 <div className="w-full h-20 flex">
                   <img
                     className="object-contain h-16 mx-auto my-auto"
@@ -47,7 +46,6 @@ export default function Portfolio() {
                   <p className="mt-2 font-sans p-1 line-clamp-5">
                     {data.description}
                   </p>
-
                 </div>
               </div>
             ))}
@@ -66,13 +64,13 @@ export default function Portfolio() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4 text-bold text-[#337ab7]">
-            {ContactInfo.map((item,i) => (
+            {ContactInfo.map((item, i) => (
               <div key={item.name + "_product"} className="mb-3">
                 <p className="mb-1 text-base text-bold text-[#3298eb]">
                   {item.name}
                 </p>
                 <input
-                  id={i+"contact"}
+                  id={i + "contact"}
                   className="w-full h-11 mt-1 py-[10px] px-5"
                   placeholder={item.name}
                   type="text"
@@ -103,21 +101,12 @@ export default function Portfolio() {
               }}
             />
           </div>
-          <Button
-            sx={{
-              color: "white",
-              bgcolor: "#00306e",
-              "&:hover": { bgcolor: "#00306e " },
-            }}
-            className="mt-[10px] mb-[14px] py-3 px-5 w-[94px] h-[47px]"
-          >
+          <div className=" duration-500 w-32 mx-4 px-7 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:bg-blue-950 hover:shadow-red-900">
             SUBMIT
-          </Button>
+          </div>
         </div>
       </div>
       {/* Contact ends */}
-
-      
     </Layout>
   );
 }

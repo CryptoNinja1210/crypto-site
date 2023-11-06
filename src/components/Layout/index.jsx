@@ -17,10 +17,11 @@ let theme = createTheme({
 theme = responsiveFontSizes(theme);
 
 export default function Layout(props) {
+  // eslint-disable-next-line react/prop-types
   const { children } = props;
   return (
     <ThemeProvider theme={theme}>
-      <div>
+      <div className="text-[#333]">
         <Header />
         {children}
         <Footer />

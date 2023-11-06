@@ -3,7 +3,7 @@ import Home from "./pages/Home/index";
 import Team from "./pages/Team/index";
 import Product from "./pages/Product/index";
 import Portfolio from "./pages/Portfolio";
-import SignIn from './pages/Login'
+import SignIn from "./pages/Login";
 import Contacts from "./pages/Contats";
 import Market from "./pages/Market";
 import Careers from "./pages/Careers";
