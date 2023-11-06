@@ -142,8 +142,8 @@ const Header = () => {
                 >
                   P & A
                 </p>
-                <div className="flex md:justify-center items-cneter ">
-                  <div className="md:flex md:visible hidden items-cneter">
+                <div className="flex lg:justify-center items-cneter ">
+                  <div className="lg:flex lg:visible hidden items-cneter">
                     {HeaderPages.map((page) => (
                       <Button
                         key={page.name}
@@ -220,7 +220,7 @@ const Header = () => {
                       />
                     </IconButton>
                   </div> */}
-                  <div className="flex md:hidden visible">
+                  <div className="flex lg:hidden visible">
                     <IconButton
                       size="large"
                       aria-label="account of current user"

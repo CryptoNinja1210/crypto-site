@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import Text from "../../components/Home/text";
 import { useNavigate } from "react-router-dom";
+import { Partners } from "../../data";
 
 export default function Home() {
   let navigate = useNavigate();
@@ -184,65 +185,20 @@ export default function Home() {
             <hr className="h-[5px] w-8 my-6 bg-white mx-auto" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-300 hover:-hue-rotate-90 hover:scale-110">
+            {Partners.map((item) => (
+              <div 
+                key={item.logo}
+                className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-300 hover:-hue-rotate-90 hover:scale-110">
               <img
-                className="m-auto w-full "
-                src="/images/partner1.png"
+                className="object-fit m-auto h-full "
+                src={item.logo}
                 alt=""
               />
             </div>
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-300 hover:-hue-rotate-90 hover:scale-110">
-              <img
-                className="m-auto sm:scale-x-150 h-full"
-                src="/images/partner2.jpg"
-                alt=""
-              />
-            </div>
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-100 hover:-hue-rotate-90 hover:scale-110">
-              <img
-                className="m-auto  h-full"
-                src="/images/partner3.png"
-                alt=""
-              />
-            </div>
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-100 hover:-hue-rotate-90 hover:scale-110">
-              <img
-                className="m-auto lg:scale-x-150 h-full"
-                src="/images/partner4.png"
-                alt=""
-              />
-            </div>
+            ))}
           </div>
         </div>
       </div>
-
-      {/* <div className="w-full bg-[#eee] flex justify-center">
-        <div className="flex flex-col md:flex-row justify-end">
-          <div className="lg:w-2/5">
-            <Text
-              title="Crypto Market Maker for Token Projects and Cryptocurrency Exchanges"
-              content="Crypto Market Making. We provide you the liquidity needed to grow your token project and cryptocurrency exchange."
-            />
-            <Button 
-              sx={{
-                color: "white",
-                bgcolor: "#00306e",
-                "&:hover": { bgcolor: "#00306e " },
-              }}
-              className="w-33 h-12">
-              LEARN MORE
-            </Button>
-          </div>
-          <div className="lg:w-2/5 h-full w-full overflow-hidden">
-            <img
-              className=" md:h-full w-full"
-              src="/images/Home/skys9.jpg"
-              alt="investment"
-            />
-          </div>
-        </div>
-      </div> */}
-
       <div className="w-full bg-white flex justify-center">
         <div className="md:py-24 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
           <p className="text-2xl mt-6 mb-5 text-center md:text-start">

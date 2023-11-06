@@ -362,3 +362,48 @@ export const CareerInfos = [
   { name: "Software Designer" },
   { name: "Poftfoko Manger" },
 ];
+
+export const ProductInfos = [
+  {
+    bgColor: 'bg-white',
+    title: 'Investment Philosophy',
+    description: `Exceptional levels of volatility and market drops of around 80%
+    present in the cryptocurrency space highlight the need for holders
+    of cryptocurrencies and investors in the space for a market-neutral
+    crypto investment strategy, capable of generating returns
+    independent of market directionality. In addition, lack of
+    institutional liquidity on crypto exchanges, combined to substantial
+    discrepancies in prices on different exchanges at various times,
+    provide oppportunities for market-makers and arbitrageurs across
+    exchanges to collect the spread through a market-neutral approach.
+    We aim at exploiting these market inefficiencies by providing
+    liquidity on several crypto exchanges to collect a spread through a
+    mark,et-neutral approach.`
+  },
+  {
+    bgColor: 'bg-[#eee]',
+    title: 'Major Beneficiaries',
+    description: `Potential clients for our Crypto Market-Neutral program include
+    HNWI&apos;s who want to achieve an active exposure to the crypto market,
+    investors who already own cryptocurrencies and want to have an alpha
+    overlay on top of their long-term holdings, family offices, and
+    institutional investors. In particular, HNWI&apos;s usually do not have
+    the time and resources to perform financial research and constantly
+    monitor their investments, so it is preferable for them to delegate
+    the management of their capital to investment professionals. Family
+    offices can invest in the strategy in an optic of portfolio
+    diversification to benefit from investing in an investment product
+    with performance uncorrelated to their current holdings. Lastly,
+    institutional investors can allocate to a market-neutral crypto
+    investment product in a core-satellite approach to achieve exposure
+    to the cryptocurrency market through an actively managed investment
+    product.`
+  }
+]
+
+export const Partners = [
+  {logo: '/images/partner1.png'},
+  {logo: '/images/partner2.jpg'},
+  {logo: '/images/partner3.png'},
+  {logo: '/images/partner4.png'},
+]
