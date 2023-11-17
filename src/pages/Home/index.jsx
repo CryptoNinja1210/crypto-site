@@ -9,12 +9,12 @@ import { useState } from "react";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 2,
+    items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 1,
+    items: 2,
     slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
@@ -337,7 +337,7 @@ export default function Home() {
 
       <div className="w-full bg-white flex justify-center">
         <div className="my-own-custom-container my-7 md:py-20 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
-          <div className="text-blue-950 text-3xl md:text-4xl font-bold my-6">
+          <div className="text-blue-950 text-xl md:text-3xl lg:text-4xl font-bold my-6 md:mx-0 mx-3">
             Latest insights from 26 Degrees
           </div>
           <div className="my-own-custom-container">
@@ -348,7 +348,6 @@ export default function Home() {
               // customRightArrow={<CustomRightArrow />}
               swipeable={false}
               draggable={false}
-              centerMode={true}
               // showDots={true}
               responsive={responsive}
               ssr={true}
@@ -363,7 +362,7 @@ export default function Home() {
             >
               {Slides.map((item, i) => (
                 <a key={item.title + i} href={item.href}>
-                  <div className=" cursor-pointer group">
+                  <div className=" cursor-pointer group mx-2">
                     <div className="w-full h-full overflow-hidden relative">
                       <div className="rounded-sm flex z-20 w-32 h-9 bg-white absolute top-3 md:top-6 left-[-5px]">
                         <p className="m-auto self-center font-bold">
@@ -375,13 +374,13 @@ export default function Home() {
                         src={item.image}
                         alt=""
                       />
-                      <div className="flex w-36 h-10 md:h-16 bg-amber-700 absolute bottom-0 left-0 -translate-x-16 group-hover:translate-x-0 duration-500">
-                        <div className="m-auto self-center mr-0 ml-auto w-16 text-white text-3xl">
+                      <div className="flex w-32 h-10 lg:36 lg:h-16 bg-amber-700 absolute bottom-0 left-0 -translate-x-16 group-hover:translate-x-0 duration-500">
+                        <div className="ml-auto self-center w-16 text-white text-xl lg:text-3xl">
                           &#x2192;
                         </div>
                       </div>
                     </div>
-                    <p className=" z-10 group-hover:underline text-sm sm:text-md md:text-2xl font-bold pt-4">
+                    <p className=" z-10 group-hover:underline text-sm sm:text-md md:text-lg font-bold pt-4">
                       {i + 1}.Melissa Downes Speaks on marketing panel at
                       Finance Magnates London Summit 2-23
                     </p>
