@@ -6,7 +6,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Copyright } from "../../data";
 import { FooterPages } from "../../data";
-import TextField from '@mui/material/TextField';
+import TextField from "@mui/material/TextField";
 
 export default function Footer() {
   let navigate = useNavigate();
@@ -53,8 +53,22 @@ export default function Footer() {
             <div className="py-1 text-[15px] text-white">
               Subscribe to our newsletter and updates .
             </div>
-            <TextField size="small" className="w-full" sx={{my: '10.5px',bgcolor:'white'}} id="Full-name" label="Full name" variant="filled" />
-            <TextField size="small" className="w-full" sx={{bgcolor:'white'}} id="Email-address" label="Email address" variant="filled" />
+            <TextField
+              size="small"
+              className="w-full"
+              sx={{ my: "10.5px", bgcolor: "white" }}
+              id="Full-name"
+              label="Full name"
+              variant="filled"
+            />
+            <TextField
+              size="small"
+              className="w-full"
+              sx={{ bgcolor: "white" }}
+              id="Email-address"
+              label="Email address"
+              variant="filled"
+            />
             {/* <input
               className="my-[10.5px] py-2 px-4 w-full text-gray-600"
               placeholder="Full name"
@@ -78,7 +92,7 @@ export default function Footer() {
               SUBSCRIBE
             </Button>
           </div>
-          <div className="md:w-2/3 md:text-start text-center">
+          <div className="md:w-2/3 lg:text-start text-center">
             <div className="grid md:grid-cols-4 grid-cols-1 ">
               {FooterPages.map((item, i) => (
                 <div key={item.name + "_" + i} className="px-4">
@@ -100,7 +114,9 @@ export default function Footer() {
           </div>
         </div>
         {Copyright.map((item, i) => (
-          <div key={item.name + "_" + i} className="text-[13px] mb-[10px]">{item.content}</div>
+          <div key={item.name + "_" + i} className="text-[13px] mb-[10px]">
+            {item.content}
+          </div>
         ))}
         <div className="text-[16px] pt-4 pb-4 text-center">
           Terms of Use - Privacy Policy

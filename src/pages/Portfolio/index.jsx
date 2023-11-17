@@ -1,9 +1,8 @@
 import Layout from "../../components/Layout";
-import { Slide } from "react-awesome-reveal";
 // import { PeterInfo } from "../../data";
 import { ContactInfo } from "../../data";
 import { Companies } from "../../data";
-import { Button, InputBase } from "@mui/material";
+import { InputBase } from "@mui/material";
 
 export default function Portfolio() {
   return (
@@ -24,7 +23,9 @@ export default function Portfolio() {
 
       <div className="w-full bg-white flex justify-center">
         <div className="py-20 px-4 w-full lg:w-[1170px]">
-          <p className="text-2xl mt-6 mb-5 text-center text-black">Portfolio</p>
+          <p className="text-3xl font-bold mt-6 mb-5 text-center text-black">
+            Portfolio
+          </p>
           <div className="flex">
             <hr className="h-[5px] w-8 my-6 bg-black mx-auto" />
           </div>

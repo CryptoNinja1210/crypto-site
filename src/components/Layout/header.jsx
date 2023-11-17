@@ -1,7 +1,6 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { Button, AppBar, Toolbar, IconButton } from "@mui/material";
+import { AppBar, Toolbar, IconButton } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ThemeProvider } from "@emotion/react";
@@ -96,23 +95,23 @@ const Header = () => {
     [mode]
   );
 
-  const [scrollTriggered, setScrollTriggered] = useState(false);
+  // const [scrollTriggered, setScrollTriggered] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Check if the scrollbar has triggered and update the state accordingly
-      if (window.scrollY > 20) {
-        setScrollTriggered(true);
-      } else {
-        setScrollTriggered(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     // Check if the scrollbar has triggered and update the state accordingly
+  //     if (window.scrollY > 20) {
+  //       setScrollTriggered(true);
+  //     } else {
+  //       setScrollTriggered(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   // const handleClickSignIn = () => {
   //   return
@@ -122,119 +121,52 @@ const Header = () => {
     <div>
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
-          <AppBar
-            sx={{
-              bgcolor: scrollTriggered ? "white" : "transparent",
-              boxShadow: scrollTriggered ? "" : "none",
-            }}
-            // {
-            //   scrollTriggered
-            //     ? "bg-white text-black w-full h-16  flex lg:items-center justify-between "
-            //     : "text-white w-full h-16  flex lg:items-center justify-between"
-            // }
-          >
+          <AppBar>
             <Toolbar className="flex justify-center">
-              <div className="flex h-16 w-full lg:w-[1170px] px-4 justify-between items-center">
-                <p
-                  className={` whitespace-nowrap ${
-                    scrollTriggered ? "text-[#033360]" : "text-[16px]"
-                  }`}
+              <div className="flex h-16  w-full lg:w-[1470px] px-4 justify-between items-center">
+                <div
+                  onClick={() => goToPage("/")}
+                  className="hover:text-blue-700 font-bold whitespace-nowrap cursor-pointer text-[#033360] text-[16px]"
                 >
                   P & A
-                </p>
-                <div className="flex lg:justify-center items-cneter ">
-                  <div className="lg:flex lg:visible hidden items-cneter">
+                </div>
+                <div className="flex md:justify-center items-cneter ">
+                  <div className="md:flex md:visible hidden items-cneter">
                     {HeaderPages.map((page) => (
-                      <Button
+                      <div
                         key={page.name}
                         onClick={() => goToPage(page.url)}
-                        sx={{
-                          z: 1,
-                          fontFamily: "sans-serif",
-                          fontWeight: "600",
-                          textTransform: "none",
-                          px: "21px",
-                          fontSize: "14px",
-                          color: scrollTriggered ? "#033360" : "white",
-                          "&:hover": { color: "gray", bgcolor: "transparent" },
-                          "&:active": { color: "gray" },
-                          "&:focus": { color: "gray" },
-                          display: "block",
-                        }}
+                        className={`duration-200 hover:border-b-blue-800 hover:border-b-4 ${
+                          page.url == window.location.pathname
+                            ? "border-b-4 border-b-blue-900 text-blue-900"
+                            : ""
+                        } active:to-blue-400 focus:text-blue-600 font-bold text-black self-center cursor-pointer z-10 font-sans py-5 px-4 hover:text-blue-900 visited::border-b-2`}
                       >
                         {page.name}
-                      </Button>
+                      </div>
                     ))}
-                    <p
-                      className={
-                        scrollTriggered
-                          ? "text-[#033360] py-2 mx-2"
-                          : "text-white py-2 mx-2"
-                      }
-                    >
-                      |
-                    </p>
+                    <p className="self-center text-[#033360] py-2 mx-2">|</p>
                   </div>
                   <div
                     className="mx-4 my-auto p-2 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 cursor-pointer"
                     onClick={() => goToPage("/sign-in")}
                   >
-                    Investors Sign In
+                    Sign In
                   </div>
-                  {/* //IconButton */}
-                  {/* <div className="flex mx-[14px]">
-                    <IconButton sx={{ px: "10px", pb: "3.5px" }}>
-                      <TwitterIcon
-                        className={
-                          scrollTriggered
-                            ? "w-[14px] h-[14px] text-[#033360]  hover:text-gray-600"
-                            : "w-[14px] h-[14px]  text-white hover:text-gray-600"
-                        }
-                      />
-                    </IconButton>
-                    <IconButton sx={{ px: "10px", pb: "3.5px" }}>
-                      <LinkedInIcon
-                        className={
-                          scrollTriggered
-                            ? "w-[14px] h-[14px] text-[#033360]  hover:text-gray-600"
-                            : "w-[14px] h-[14px]  text-white hover:text-gray-600"
-                        }
-                      />
-                    </IconButton>
-                    <IconButton sx={{ px: "10px" }}>
-                      <MailIcon
-                        className={
-                          scrollTriggered
-                            ? "w-[14px] h-[14px] text-[#033360]  hover:text-gray-600"
-                            : "w-[14px] h-[14px]  text-white hover:text-gray-600"
-                        }
-                      />
-                    </IconButton>
-                    <IconButton sx={{ px: "21px", pb: "3.5px" }}>
-                      <PhoneIcon
-                        className={
-                          scrollTriggered
-                            ? "w-[14px] h-[14px] text-[#033360]  hover:text-gray-600"
-                            : "w-[14px] h-[14px]  text-white hover:text-gray-600"
-                        }
-                      />
-                    </IconButton>
-                  </div> */}
-                  <div className="flex lg:hidden visible">
+
+                  <div className="flex md:hidden visible">
                     <IconButton
                       size="large"
                       aria-label="account of current user"
                       aria-controls="menu-appbar"
                       aria-haspopup="true"
                       onClick={handleClickOpen}
-                      color="inherit"
+                      color="black"
                       sx={{
                         marginRight: "10px",
                       }}
                     >
-                      <MenuIcon
-                        sx={{ color: scrollTriggered ? "#033360" : "white" }}
-                      />
+                      <MenuIcon />
                     </IconButton>
                     <Dialog
                       fullScreen

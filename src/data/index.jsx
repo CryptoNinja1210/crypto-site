@@ -363,47 +363,41 @@ export const CareerInfos = [
   { name: "Poftfoko Manger" },
 ];
 
-export const ProductInfos = [
+export const Slides = [
   {
-    bgColor: 'bg-white',
-    title: 'Investment Philosophy',
-    description: `Exceptional levels of volatility and market drops of around 80%
-    present in the cryptocurrency space highlight the need for holders
-    of cryptocurrencies and investors in the space for a market-neutral
-    crypto investment strategy, capable of generating returns
-    independent of market directionality. In addition, lack of
-    institutional liquidity on crypto exchanges, combined to substantial
-    discrepancies in prices on different exchanges at various times,
-    provide oppportunities for market-makers and arbitrageurs across
-    exchanges to collect the spread through a market-neutral approach.
-    We aim at exploiting these market inefficiencies by providing
-    liquidity on several crypto exchanges to collect a spread through a
-    mark,et-neutral approach.`
+    title: "Efren Reyes",
+    href: "https://www.cobancapital.com/news-and-insights/collaboration-announcement",
+    desc: 'Known as "The Magician", Efren Reyes is well regarded by many professionals as the greatest all around player of all time.',
+    image:
+      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/11/Melissa-at-FMLS-2023-website-2-1200x784.png",
   },
   {
-    bgColor: 'bg-[#eee]',
-    title: 'Major Beneficiaries',
-    description: `Potential clients for our Crypto Market-Neutral program include
-    HNWI&apos;s who want to achieve an active exposure to the crypto market,
-    investors who already own cryptocurrencies and want to have an alpha
-    overlay on top of their long-term holdings, family offices, and
-    institutional investors. In particular, HNWI&apos;s usually do not have
-    the time and resources to perform financial research and constantly
-    monitor their investments, so it is preferable for them to delegate
-    the management of their capital to investment professionals. Family
-    offices can invest in the strategy in an optic of portfolio
-    diversification to benefit from investing in an investment product
-    with performance uncorrelated to their current holdings. Lastly,
-    institutional investors can allocate to a market-neutral crypto
-    investment product in a core-satellite approach to achieve exposure
-    to the cryptocurrency market through an actively managed investment
-    product.`
-  }
-]
+    title: "Ronnie O'Sullivan",
+    href: "#123",
+    desc: "Ronald Antonio O'Sullivan is a six-time world champion and is the most successful player in the history of snooker.",
+    image:
+      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/10/IFX-EXPO-Cyprus-2023-26-Degrees-wEBSITE-600x392.png",
+  },
 
-export const Partners = [
-  {logo: '/images/partner1.png'},
-  {logo: '/images/partner2.jpg'},
-  {logo: '/images/partner3.png'},
-  {logo: '/images/partner4.png'},
-]
+  {
+    title: "Shane Van Boening",
+    href: "#123",
+    desc: 'The "South Dakota Kid" is hearing-impaired and uses a hearing aid, but it has not limited his ability.',
+    image:
+      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/10/Gav-FX-Markets-USA-panel-PR-v2.1-600x392.png",
+  },
+  {
+    title: "Mike Sigel",
+    href: "#123",
+    desc: 'Mike Sigel or "Captain Hook" as many like to call him is an American professional pool player with over 108 tournament wins.',
+    image:
+      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/08/Finance-FastTrack-hero-600x392.png",
+  },
+  {
+    title: "Willie Mosconi",
+    href: "#123",
+    desc: 'Nicknamed "Mr. Pocket Billiards," Willie Mosconi was among the first Billiard Congress of America Hall of Fame inductees.',
+    image:
+      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/09/AdobeStock_546418424-600x392.png",
+  },
+];

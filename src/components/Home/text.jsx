@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export default function Text({ title, content }) {
   return (
     <div className="py-24 px-4">
