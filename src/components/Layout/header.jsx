@@ -122,11 +122,11 @@ const Header = () => {
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
           <AppBar>
-            <Toolbar className="flex justify-center">
+            <Toolbar className="flex justify-center backdrop-blur-sm">
               <div className="flex h-16  w-full lg:w-[1470px] px-4 justify-between items-center">
                 <div
                   onClick={() => goToPage("/")}
-                  className="hover:text-blue-700 font-bold whitespace-nowrap cursor-pointer text-[#033360] text-[16px]"
+                  className="hover:text-blue-500  whitespace-nowrap cursor-pointer text-gray-600 text-2xl"
                 >
                   P & A
                 </div>
@@ -136,11 +136,11 @@ const Header = () => {
                       <div
                         key={page.name}
                         onClick={() => goToPage(page.url)}
-                        className={`duration-200 hover:border-b-blue-800 hover:border-b-4 ${
+                        className={`${
                           page.url == window.location.pathname
-                            ? "border-b-4 border-b-blue-900 text-blue-900"
+                            ? "border-b-2 border-b-blue-500 text-blue-500"
                             : ""
-                        } active:to-blue-400 focus:text-blue-600 font-bold text-black self-center cursor-pointer z-10 font-sans py-5 px-4 hover:text-blue-900 visited::border-b-2`}
+                        } focus:text-blue-500 text-gray-500 self-center cursor-pointer z-10 font-sans py-5 px-4 hover:text-blue-900 visited::border-b-2`}
                       >
                         {page.name}
                       </div>
@@ -148,7 +148,7 @@ const Header = () => {
                     <p className="self-center text-[#033360] py-2 mx-2">|</p>
                   </div>
                   <div
-                    className="mx-4 my-auto p-2 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 cursor-pointer"
+                    className="mx-4 my-auto p-2 rounded-md bg-blue-500 hover:bg-blue-500 duration-300 cursor-pointer"
                     onClick={() => goToPage("/sign-in")}
                   >
                     Sign In

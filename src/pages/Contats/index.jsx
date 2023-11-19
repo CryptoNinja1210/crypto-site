@@ -37,7 +37,8 @@ export default function Contacts() {
 
   return (
     <Layout>
-      <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-80 flex justify-center">
+      <div className="bg-gray-400 w-full h-80 flex justify-center">
+        {/* <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-80 flex justify-center"> */}
         <div className="lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
           <p className="font-[Playfair] text-white text-[2.5rem] pt-10 pb-5">

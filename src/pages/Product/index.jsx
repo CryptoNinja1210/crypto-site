@@ -5,7 +5,8 @@ export default function Product() {
   return (
     <Layout>
       <div>
-        <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] flex justify-center ">
+        {/* <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] flex justify-center "> */}
+        <div className="z-[0] bg-gray-400  flex justify-center ">
           {/* <Slide duration={2000} direction="top"> */}
           <div className="lg:w-[1170px] w-full  p-4 my-32">
             <p className="font-[Playfair] text-white text-[2.5rem]  pb-5">
