@@ -123,7 +123,7 @@ const Header = () => {
         <ThemeProvider theme={theme}>
           <AppBar>
             <Toolbar className="flex justify-center backdrop-blur-sm">
-              <div className="flex h-16  w-full lg:w-[1470px] px-4 justify-between items-center">
+              <div className="flex h-16  w-full lg:w-[1470px] px-4 justify-between items-center border-b-[1px] border-white">
                 <div
                   onClick={() => goToPage("/")}
                   className="hover:text-blue-500  whitespace-nowrap cursor-pointer text-gray-600 text-2xl"
@@ -140,7 +140,7 @@ const Header = () => {
                           page.url == window.location.pathname
                             ? "border-b-2 border-b-blue-500 text-blue-500"
                             : ""
-                        } focus:text-blue-500 text-gray-500 self-center cursor-pointer z-10 font-sans py-5 px-4 hover:text-blue-900 visited::border-b-2`}
+                        } focus:text-blue-500 text-gray-500 self-center cursor-pointer z-10 font-sans py-5 px-4 hover:text-blue-500 visited::border-b-2`}
                       >
                         {page.name}
                       </div>

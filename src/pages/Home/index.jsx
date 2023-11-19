@@ -375,7 +375,7 @@ export default function Home() {
                         alt=""
                       />
                       <div className="flex w-32 h-10 lg:36 lg:h-16 bg-amber-700 absolute bottom-0 left-0 -translate-x-16 group-hover:translate-x-0 duration-500">
-                        <div className="ml-auto self-center w-16 text-white text-xl lg:text-3xl">
+                        <div className="ml-auto absolute right-[-10px] self-center w-16 text-white text-xl lg:text-3xl">
                           &#x2192;
                         </div>
                       </div>
