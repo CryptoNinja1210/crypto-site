@@ -367,37 +367,32 @@ export const Slides = [
   {
     title: "Efren Reyes",
     href: "https://www.cobancapital.com/news-and-insights/collaboration-announcement",
-    desc: 'Known as "The Magician", Efren Reyes is well regarded by many professionals as the greatest all around player of all time.',
-    image:
-      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/11/Melissa-at-FMLS-2023-website-2-1200x784.png",
+    desc: "Coban Capital today announced the collaboration with the management team of Dr. H.C. Peter Kudera. Mr.Mbai, Chairman and CEO of Coban Capital said :",
+    image: "/images/news1.jfif",
   },
   {
     title: "Ronnie O'Sullivan",
     href: "#123",
-    desc: "Ronald Antonio O'Sullivan is a six-time world champion and is the most successful player in the history of snooker.",
-    image:
-      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/10/IFX-EXPO-Cyprus-2023-26-Degrees-wEBSITE-600x392.png",
+    desc: "Visionary is excited to announce strategic Partnership with Coban Capital’s Digital Asset Management Arm.",
+    image: "/images/news2.jpg",
   },
 
   {
     title: "Shane Van Boening",
     href: "#123",
-    desc: 'The "South Dakota Kid" is hearing-impaired and uses a hearing aid, but it has not limited his ability.',
-    image:
-      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/10/Gav-FX-Markets-USA-panel-PR-v2.1-600x392.png",
+    desc: "",
+    image: "/images/news1.jfif",
   },
   {
     title: "Mike Sigel",
     href: "#123",
-    desc: 'Mike Sigel or "Captain Hook" as many like to call him is an American professional pool player with over 108 tournament wins.',
-    image:
-      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/08/Finance-FastTrack-hero-600x392.png",
+    desc: "",
+    image: "/images/news1.jfif",
   },
   {
     title: "Willie Mosconi",
     href: "#123",
-    desc: 'Nicknamed "Mr. Pocket Billiards," Willie Mosconi was among the first Billiard Congress of America Hall of Fame inductees.',
-    image:
-      "https://www.26degreesglobalmarkets.com/wp-content/uploads/2023/09/AdobeStock_546418424-600x392.png",
+    desc: "",
+    image: "/images/news1.jfif",
   },
 ];

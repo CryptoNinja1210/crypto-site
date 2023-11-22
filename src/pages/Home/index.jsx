@@ -111,16 +111,19 @@ export default function Home() {
       </div>
 
       <div className="bg-white flex justify-center">
-        <div className="md:mx-0 mx-4 font-serif leading-10 tracking-wider py-32 text-xl md:text-2xl lg:text-3xl lg:w-[1170px] text-[#033360]">
-          P&A is the Digital Asset Management Division Arm of Coban Capital. We
-          focus on digital asset allocation with mitigated risk to our overall
-          platform. Our core team members are from world-leading internet and
-          finance companies, including the earliest adopters and professionals
-          of cryptocurrency who boast rich experience in global operations and
-          services in the industry. With our proprietary risk mitigation
-          platform system and excellent experience, we are dedicated to building
-          a highly 24% secure, stable and efficient cryptocurrency
-          multi-strategy fund.
+        <div className="md:mx-0 mx-4 text-4xl font-[Playfair] py-32 text-[#033360]">
+          About Us
+          <div className="pt-8 font-serif text-gray-600 text-sm md:text-md lg:text-xl lg:w-[1170px]">
+            P&A is the Digital Asset Management Division Arm of Coban Capital.
+            We focus on digital asset allocation with mitigated risk to our
+            overall platform. Our core team members are from world-leading
+            internet and finance companies, including the earliest adopters and
+            professionals of cryptocurrency who boast rich experience in global
+            operations and services in the industry. With our proprietary risk
+            mitigation platform system and excellent experience, we are
+            dedicated to building a highly 24% secure, stable and efficient
+            cryptocurrency multi-strategy fund.
+          </div>
         </div>
         {/* </Fade> */}
       </div>
@@ -276,34 +279,28 @@ export default function Home() {
           <div className="flex">
             <hr className="h-[5px] w-8 my-6 bg-white mx-auto" />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+              <img className="w-52 h-16" src="/images/partner1.png " alt="" />
+            </div>
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+              <img className="w-52 h-16" src="/images/partner2.jpg" alt="" />
+            </div>
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+              <img className="w-52 h-16" src="/images/partner3.png" alt="" />
+            </div>
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+              <img className="w-52 h-16" src="/images/partner4.png" alt="" />
+            </div>
+            <div className="flex items-center px-2 py-2 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
               <img
-                className="m-auto w-full "
-                src="/images/partner1.png"
+                className="w-52 h-16 rounded-md"
+                src="/images/partner5.jfif"
                 alt=""
               />
             </div>
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img
-                className="m-auto sm:scale-x-150 h-full"
-                src="/images/partner2.jpg"
-                alt=""
-              />
-            </div>
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img
-                className="m-auto  h-full"
-                src="/images/partner3.png"
-                alt=""
-              />
-            </div>
-            <div className="flex justify-center items-center w-full sm:w-52 md:w-44 lg:w-52 h-20 px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img
-                className="m-auto lg:scale-x-150 h-full"
-                src="/images/partner4.png"
-                alt=""
-              />
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-cyan-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+              <img className="w-52 h-16" src="/images/partner6.jfif" alt="" />
             </div>
           </div>
         </div>
@@ -337,8 +334,8 @@ export default function Home() {
 
       <div className="w-full bg-white flex justify-center">
         <div className="my-own-custom-container my-7 md:py-20 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
-          <div className="text-blue-950 text-xl md:text-3xl lg:text-4xl font-bold my-6 md:mx-0 mx-3">
-            Latest insights from 26 Degrees
+          <div className="text-blue-950 text-xl md:text-3xl lg:text-4xl font-[Playfair] my-6 md:mx-0 mx-3">
+            Latest insights from P&A
           </div>
           <div className="my-own-custom-container">
             <Carousel
@@ -364,13 +361,13 @@ export default function Home() {
                 <a key={item.title + i} href={item.href}>
                   <div className=" cursor-pointer group mx-2">
                     <div className="w-full h-full overflow-hidden relative">
-                      <div className="rounded-sm flex z-20 w-32 h-9 bg-white absolute top-3 md:top-6 left-[-5px]">
+                      <div className=" object-fill rounded-sm flex z-20 w-32 h-9 bg-white absolute top-3 md:top-6 left-[-5px]">
                         <p className="m-auto self-center font-bold">
                           expert voice
                         </p>
                       </div>
                       <img
-                        className=" h-full w-ful group-hover:scale-110 duration-500"
+                        className="  w-96 h-64 group-hover:scale-110 duration-500"
                         src={item.image}
                         alt=""
                       />
@@ -380,9 +377,8 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <p className=" z-10 group-hover:underline text-sm sm:text-md md:text-lg font-bold pt-4">
-                      {i + 1}.Melissa Downes Speaks on marketing panel at
-                      Finance Magnates London Summit 2-23
+                    <p className=" z-10 group-hover:underline text-sm sm:text-md md:text-md pt-4">
+                      {item.desc}
                     </p>
                   </div>
                 </a>

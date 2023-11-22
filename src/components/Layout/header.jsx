@@ -148,10 +148,10 @@ const Header = () => {
                     <p className="self-center text-[#033360] py-2 mx-2">|</p>
                   </div>
                   <div
-                    className="mx-4 my-auto p-2 rounded-md bg-blue-500 hover:bg-blue-500 duration-300 cursor-pointer"
+                    className="w-36 m-auto p-2 rounded-md bg-blue-500 hover:bg-blue-500 duration-300 cursor-pointer"
                     onClick={() => goToPage("/sign-in")}
                   >
-                    Sign In
+                    Investors SignIn
                   </div>
 
                   <div className="flex md:hidden visible">
