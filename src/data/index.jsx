@@ -103,9 +103,9 @@ export const FooterPages = [
     data: [
       { name: "TEAM", url: "/team" },
       { name: "CAREERS", url: "/careers" },
-      { name: "INVESTORS APPROACH", url: "/" },
-      { name: "RISK MANAGEMENT", url: "/" },
-      { name: "TECHNOLOGY", url: "/" },
+      // { name: "INVESTORS APPROACH", url: "/" },
+      // { name: "RISK MANAGEMENT", url: "/" },
+      // { name: "TECHNOLOGY", url: "/" },
     ],
   },
   {
@@ -126,10 +126,10 @@ export const FooterPages = [
   {
     name: "Contact",
     data: [
-      { name: "INGUIRY", url: "/" },
+      // { name: "INGUIRY", url: "/" },
       { name: "CONTACTS", url: "/contacts" },
-      { name: "SCHEDULE", url: "/" },
-      { name: "CALL", url: "/" },
+      // { name: "SCHEDULE", url: "/" },
+      // { name: "CALL", url: "/" },
     ],
   },
 ];

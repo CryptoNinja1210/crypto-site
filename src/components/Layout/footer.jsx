@@ -16,23 +16,23 @@ export default function Footer() {
   };
 
   return (
-    <div className="w-full h-full flex lg:justify-center justify-between bg-gradient-to-tr to-[#029797] via-[#12468f] from-[#003073]">
-      <div className="lg:w-[1170px] w-full py-8 px-4 text-white">
+    <div className="shadow-2xl backdrop-filter w-full h-full flex lg:justify-center justify-between bg-gradient-to-tr to-gray-300 via-gray-200 from-gray-300">
+      <div className="lg:w-[1170px] w-full py-8 px-4 text-black">
         {/* header */}
         <div className="md:flex md:justify-between text-center">
-          <div className="text-white text-[20px] py-3 md:py-0">P & A</div>
+          <div className="text-[20px] py-3 md:py-0">P & A</div>
           <div className="flex justify-center p-3 md:p-0">
             <IconButton sx={{ px: "12px", py: "6px" }}>
-              <TwitterIcon className="w-[44px] h-[34px] text-white hover:text-gray-600" />
+              <TwitterIcon className="w-[44px] h-[34px] text-gray-600 hover:text-gray-600" />
             </IconButton>
             <IconButton sx={{ px: "12px", py: "6px" }}>
-              <LinkedInIcon className="w-[44px] h-[34px] text-white hover:text-gray-600" />
+              <LinkedInIcon className="w-[44px] h-[34px] text-gray-600 hover:text-gray-600" />
             </IconButton>
             <IconButton sx={{ px: "12px", py: "6px" }}>
-              <MailIcon className="w-[44px] h-[34px] text-white hover:text-gray-600" />
+              <MailIcon className="w-[44px] h-[34px] text-gray-600 hover:text-gray-600" />
             </IconButton>
             <IconButton sx={{ px: "12px", py: "6px" }}>
-              <PhoneIcon className="w-[44px] h-[34px] text-white hover:text-gray-600" />
+              <PhoneIcon className="w-[44px] h-[34px] text-gray-600 hover:text-gray-600" />
             </IconButton>
           </div>
         </div>
@@ -46,11 +46,11 @@ export default function Footer() {
           }}
         />
         <div className="flex flex-col md:flex-row-reverse py-8 md:px-4">
-          <div className="md:w-1/3 my-2 px-[40px]">
-            <div className="mb-[10px] text-[20px]  text-[#bedaf4]">
+          <div className="md:w-1/3  px-[40px]">
+            <div className="mb-[10px] text-[20px]  text-blue-600">
               Newsletter
             </div>
-            <div className="py-1 text-[15px] text-white">
+            <div className="py-1 text-[15px]">
               Subscribe to our newsletter and updates .
             </div>
             <TextField
@@ -81,9 +81,9 @@ export default function Footer() {
             /> */}
             <Button
               sx={{
-                color: "black",
-                bgcolor: "#bedaf4",
-                "&:hover": { bgcolor: "lightskyblue" },
+                color: "white",
+                bgcolor: "blueviolet",
+                "&:hover": { bgcolor: "gray" },
                 mt: "10px",
                 mb: "40px",
               }}
@@ -96,14 +96,14 @@ export default function Footer() {
             <div className="grid md:grid-cols-4 grid-cols-1 ">
               {FooterPages.map((item, i) => (
                 <div key={item.name + "_" + i} className="px-4">
-                  <div className="mb-[10px] text-[20px]  text-[#bedaf4]">
+                  <div className="mb-[10px] text-[20px]  text-blue-600">
                     {item.name}
                   </div>
                   {item.data.map((data, i) => (
                     <div
                       key={data.name + "_" + i}
                       onClick={() => goToPage(data.url)}
-                      className="py-1 text-[14px] text-white hover:text-gray-300 cursor-pointer"
+                      className="py-1 text-[14px] hover:text-gray-700 cursor-pointer"
                     >
                       {data.name}
                     </div>

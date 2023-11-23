@@ -1,5 +1,4 @@
 import {
-  Button,
   InputBase,
   Box,
   TextField,
@@ -7,7 +6,7 @@ import {
   InputLabel,
 } from "@mui/material";
 import { useState } from "react";
-import { Slide } from "react-awesome-reveal";
+// import { Slide } from "react-awesome-reveal";
 import Layout from "../../components/Layout";
 import { ContactInfo } from "../../data";
 import { MuiTelInput } from "mui-tel-input";
@@ -19,7 +18,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 export default function Contacts() {
-  const [country, setCountry] = useState("");
+  // const [country, setCountry] = useState("");
   const [type, setType] = useState("");
   const [phone, setPhone] = useState("");
 
@@ -37,14 +36,12 @@ export default function Contacts() {
 
   return (
     <Layout>
-      <div className="bg-gray-400 w-full h-80 flex justify-center">
+      <div className="bg-gradient-to-tr to-lime-50 via-gray-200 from-teal-50 w-full h-80 flex justify-center">
         {/* <div className="bg-gradient-to-bl from-[#029797] via-[#01547a] to-[#003073] w-full h-80 flex justify-center"> */}
         <div className="lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
-          <p className="font-[Playfair] text-white text-[2.5rem] pt-10 pb-5">
-            Contact Us
-          </p>
-          <p className="text-white text-[1.25rem]">
+          <p className="font-[Playfair] text-[2.5rem] pt-10 pb-5">Contact Us</p>
+          <p className="text-[1.25rem]">
             Contact us now by filling out the contact form below for more info
             regarding our products and services.
           </p>

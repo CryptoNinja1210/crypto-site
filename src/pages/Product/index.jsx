@@ -6,13 +6,13 @@ export default function Product() {
     <Layout>
       <div>
         {/* <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] flex justify-center "> */}
-        <div className="z-[0] bg-gray-400  flex justify-center ">
+        <div className="z-[0] bg-gradient-to-tr to-lime-50 via-gray-200 from-violet-200 flex justify-center ">
           {/* <Slide duration={2000} direction="top"> */}
-          <div className="lg:w-[1170px] w-full  p-4 my-32">
-            <p className="font-[Playfair] text-white text-[2.5rem]  pb-5">
+          <div className="text-gray-600 lg:w-[1170px] w-full  p-4 my-32">
+            <p className="font-[Playfair] text-[2.5rem]  pb-5">
               Crypto Market-Neutral
             </p>
-            <p className="text-white text-[1.25rem]">
+            <p className="text-[1.25rem]">
               We aim to deliver you uncorrelated returns in the crypto space
               independent of market directionality
             </p>
@@ -56,7 +56,7 @@ export default function Product() {
       </div>
 
       <div className="bg-[#eee] flex justify-center">
-        <div className="py-32  px-4 text-3xl w-[1170px] text-[#033360]">
+        <div className="py-32  px-4 text-3xl w-[1170px] text-blue-900">
           <p className="pt-6 pb-5">Major Beneficiaries</p>
           <p className="mb-3 text-base text-black">
             Potential clients for our Crypto Market-Neutral program include
@@ -82,7 +82,7 @@ export default function Product() {
         <div className="lg:ml-72 flex py-32 lg:justify-center px-4 w-full lg:w-[1170px] text-[#033360]">
           <div className="">
             <p className="text-3xl mt-[25.6px] mb-5">Summary of Terms</p>
-            <table className="mt-4" border={0} cellPadding={0} cellsapcing={0}>
+            <table className="mt-4" border={0} cellPadding={0}>
               <tbody className="text-[1em]">
                 {Terms.map((item, i) => (
                   <tr
@@ -110,8 +110,8 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="bg-[#033360] flex justify-center">
-        <div className="flex md:flex-row flex-col w-[1170px] py-32  px-4  text-white">
+      <div className="bg-gray-50 flex justify-center">
+        <div className="flex md:flex-row flex-col w-[1170px] py-32  px-4  text-gray-800">
           <div className="md:w-1/2">
             <p className="pt-6 pb-5 text-3xl ">Investment Technology</p>
             <p className="mb-3 text-base">

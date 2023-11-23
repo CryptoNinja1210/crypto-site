@@ -1,19 +1,17 @@
 import Layout from "../../components/Layout";
-import { Slide } from "react-awesome-reveal";
-import { Fade } from "react-awesome-reveal";
+// import { Slide } from "react-awesome-reveal";
+// import { Fade } from "react-awesome-reveal";
 import { PeterInfo } from "../../data";
 
 export default function Team() {
   return (
     <Layout>
       {/* <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full flex justify-center"> */}
-      <div className="bg-gray-400 w-full flex justify-center">
-        <div className="my-24 lg:w-[1170px] w-full px-4 self-center">
+      <div className="bg-gradient-to-tr to-lime-50 via-gray-200 from-blue-100  w-full flex justify-center">
+        <div className="my-24 text-gray-500 lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
-          <p className="font-[Playfair] text-white text-[2.5rem] pt-10 pb-5">
-            Team
-          </p>
-          <p className="text-white text-[1.25rem]">
+          <p className="font-[Playfair] text-[2.5rem] pt-10 pb-5">Team</p>
+          <p className="text-[1.25rem]">
             Our team brings you a substantial amount of experience
           </p>
           {/* </Slide> */}
@@ -65,7 +63,7 @@ export default function Team() {
                 //   damping={1}
                 //   cascade
                 // >
-                <p key={item.content} className="text-base mb-3">
+                <p key={item.content + i} className="text-base mb-3">
                   {item.content}
                 </p>
                 // </Fade>

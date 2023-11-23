@@ -8,13 +8,13 @@ export default function Portfolio() {
   return (
     <Layout>
       {/* <div className="bg-gradient-to-bl from-[#0aa7f0] via-[#085988] to-[#01314d] w-full flex justify-center"> */}
-      <div className="bg-gray-400 w-full flex justify-center">
+      <div className="bg-gradient-to-tr to-lime-50 via-gray-200 from-yellow-50 w-full flex justify-center">
         <div className="my-24 lg:w-[1170px] w-full px-4 self-center">
           {/* <Slide duration={2000} triggerOnce direction="right"> */}
-          <p className="font-[Playfair] text-white text-[2.5rem] pt-10 pb-5">
+          <p className="font-[Playfair] text-[2.5rem] pt-10 pb-5">
             Investment capital
           </p>
-          <p className="text-white text-[1.25rem]">
+          <p className="text-[1.25rem]">
             Focuses on investment in Web 3.0, Layer 2 and DApps combining DeFi,
             NFT or DAO elements
           </p>
