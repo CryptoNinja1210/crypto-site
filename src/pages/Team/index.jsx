@@ -42,7 +42,7 @@ export default function Team() {
               <img
                 className="md:w-full w-[200px] h-[300px] md:h-full  object-contain"
                 src="/images/Dr_Peter.jpg"
-                alt=""
+                alt="Dr peter"
               />
               {/* </Fade> */}
               {/* </Slide> */}

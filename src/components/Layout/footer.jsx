@@ -1,4 +1,4 @@
-import { Button, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -50,7 +50,7 @@ export default function Footer() {
             <div className="mb-[10px] text-[20px]  text-blue-600">
               Newsletter
             </div>
-            <div className="py-1 text-[15px]">
+            <div className="py-1 text-[15px] ">
               Subscribe to our newsletter and updates .
             </div>
             <TextField
@@ -79,18 +79,9 @@ export default function Footer() {
               placeholder="Email address"
               type="text"
             /> */}
-            <Button
-              sx={{
-                color: "white",
-                bgcolor: "blueviolet",
-                "&:hover": { bgcolor: "gray" },
-                mt: "10px",
-                mb: "40px",
-              }}
-              className="w-full"
-            >
+            <div className="w-full duration-500 text-center mt-3 py-2 rounded-md cursor-pointer text-white bg-violet-900 hover:bg-violet-800 active:bg-violet-950 hover:shadow-2xl">
               SUBSCRIBE
-            </Button>
+            </div>
           </div>
           <div className="md:w-2/3 lg:text-start text-center">
             <div className="grid md:grid-cols-4 grid-cols-1 ">

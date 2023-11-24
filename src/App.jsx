@@ -7,6 +7,7 @@ import SignIn from "./pages/Login";
 import Contacts from "./pages/Contats";
 import Market from "./pages/Market";
 import Careers from "./pages/Careers";
+import News from "./pages/News/index";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/market" element={<Market />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </Router>
   );

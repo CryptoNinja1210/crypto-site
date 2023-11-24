@@ -5,6 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Slides } from "../../data";
 import { useState } from "react";
+import "./carousel-with-custom-dots.css";
 
 const responsive = {
   desktop: {
@@ -24,35 +25,6 @@ const responsive = {
   },
 };
 
-// const CustomRightArrow = ({ onClick, ...rest }) => {
-//   const {
-//     onMove,
-//     carouselState: { currentSlide, deviceType },
-//   } = rest;
-//   // onMove means if dragging or swiping in progress.
-//   return <button onClick={() => onClick()} />;
-// };
-
-// const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
-//   const {
-//     carouselState: { currentSlide },
-//   } = rest;
-//   return (
-//     <div className="carousel-button-group">
-//       {" "}
-//       // remember to give it position:absolute
-//       <ButtonOne
-//         className={currentSlide === 0 ? "disable" : ""}
-//         onClick={() => previous()}
-//       />
-//       <ButtonTwo onClick={() => next()} />
-//       <ButtonThree onClick={() => goToSlide(currentSlide + 1)}>
-//         {" "}
-//         Go to any slide{" "}
-//       </ButtonThree>
-//     </div>
-//   );
-// };
 export default function Home() {
   let navigate = useNavigate();
   const goTopage = (e) => {
@@ -68,24 +40,6 @@ export default function Home() {
   };
   document.addEventListener("mousemove", handleMouseMove);
 
-  //   .site-1yws7e1 {
-  //     z-index: 10;
-  //     pointer-events: none;
-  //     position: absolute;
-  //     top: -250px;
-  //     left: 50%;
-  //     transform: translateX(-50%) scale(1.5);
-  //     width: 600px;
-  //     height: 400px;
-  //     opacity: 0.2;
-  //     filter: blur(69px);
-  //     will-change: transform;
-  //     animation-timeline: auto;
-  //     animation-range-start: normal;
-  //     animation-range-end: normal;
-  //     background: linear-gradient(135deg, rgb(114, 46, 209) 0%, rgb(22, 119, 255) 30%, rgb(245, 34, 45) 70%, rgb(19, 194, 194) 100%) 0% 0% / 200% 200%;
-  //     animation: 10s ease 0s infinite normal none running glow;
-  // }
   return (
     <Layout>
       <div></div>
@@ -113,7 +67,7 @@ export default function Home() {
       <div className="bg-white flex justify-center">
         <div className="md:mx-0 mx-4 text-4xl font-[Playfair] py-32 text-blue-900">
           About Us
-          <div className="pt-8 font-serif text-gray-600 text-sm md:text-md lg:text-xl lg:w-[1170px]">
+          <div className="pt-8 font-serif text-gray-600 text-base lg:text-xl lg:w-[1170px]">
             P&A is the Digital Asset Management Division Arm of Coban Capital.
             We focus on digital asset allocation with mitigated risk to our
             overall platform. Our core team members are from world-leading
@@ -121,7 +75,7 @@ export default function Home() {
             professionals of cryptocurrency who boast rich experience in global
             operations and services in the industry. With our proprietary risk
             mitigation platform system and excellent experience, we are
-            dedicated to building a highly 24% secure, stable and efficient
+            dedicated to building a highly secure, stable and efficient
             cryptocurrency multi-strategy fund.
           </div>
         </div>
@@ -139,7 +93,7 @@ export default function Home() {
             />
             <div className=" pb-16 px-4">
               <div
-                className="duration-500 w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl"
+                className="duration-500 w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-900 hover:bg-blue-800 hover:shadow-2xl"
                 onClick={() => {
                   goTopage("/product");
                 }}
@@ -152,7 +106,7 @@ export default function Home() {
             <img
               className=" md:h-full w-full"
               src="/images/Home/skys1_rect.jpg"
-              alt="investment"
+              alt="investment architecture"
             />
           </div>
         </div>
@@ -166,7 +120,7 @@ export default function Home() {
             />
             <div className=" pb-16 px-4">
               <div
-                className=" duration-500 w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl"
+                className=" duration-500 w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-900 hover:bg-blue-800 hover:shadow-2xl"
                 onClick={() => {
                   goTopage("/portfolio");
                 }}
@@ -179,7 +133,7 @@ export default function Home() {
             <img
               className=" md:h-full w-full"
               src="/images/Home/architecture4_rect.jpg"
-              alt="investment"
+              alt="investment architecture"
             />
           </div>
         </div>
@@ -198,7 +152,7 @@ export default function Home() {
               </div>
               <div className=" pt-6 px-4">
                 <div
-                  className="w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-[#00306e] bg-white hover:bg-gray-500 hover:drop-shadow-xl duration-200"
+                  className="duration-500 w-32 mx-4 px-2 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-900 hover:bg-blue-800 hover:shadow-2xl"
                   onClick={() => {
                     goTopage("/market");
                   }}
@@ -283,30 +237,50 @@ export default function Home() {
             Our Partners
           </p>
           <div className="flex">
-            <hr className="h-[5px] w-8 my-6 bg-gray-100 mx-auto" />
+            <hr className="h-[5px] w-8 my-6 bg-blue-600 mx-auto" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
             <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img className="w-52 h-16" src="/images/partner1.png " alt="" />
+              <img
+                className="w-52 h-16"
+                src="/images/partner1.png "
+                alt="partner"
+              />
             </div>
             <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img className="w-52 h-16" src="/images/partner2.jpg" alt="" />
+              <img
+                className="w-52 h-16"
+                src="/images/partner2.jpg"
+                alt="partner"
+              />
             </div>
             <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img className="w-52 h-16" src="/images/partner3.png" alt="" />
+              <img
+                className="w-52 h-16"
+                src="/images/partner3.png"
+                alt="partner"
+              />
             </div>
             <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img className="w-52 h-16" src="/images/partner4.png" alt="" />
+              <img
+                className="w-52 h-16"
+                src="/images/partner4.png"
+                alt="partner"
+              />
             </div>
             <div className="flex items-center px-2 py-2 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="w-52 h-16 rounded-md"
                 src="/images/partner5.jfif"
-                alt=""
+                alt="partner"
               />
             </div>
             <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
-              <img className="w-52 h-16" src="/images/partner6.jfif" alt="" />
+              <img
+                className="w-52 h-16"
+                src="/images/partner6.jfif"
+                alt="partner"
+              />
             </div>
           </div>
         </div>
@@ -339,33 +313,39 @@ export default function Home() {
       </div> */}
 
       <div className="w-full bg-gray-100 flex justify-center">
-        <div className="my-own-custom-container my-7 md:py-20 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
-          <div className="text-blue-950 text-xl md:text-3xl lg:text-4xl font-[Playfair] my-6 md:mx-0 mx-3">
-            Latest insights from P&A
+        <div className=" my-own-custom-container my-7 md:py-20 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
+          <div className="flex justify-between my-6 md:mx-0 mx-3">
+            <div className="text-blue-950 text-2xl md:text-3xl lg:text-4xl font-[Playfair] ">
+              Latest insights from P&A
+            </div>
+            <div
+              onClick={() => {
+                goTopage("/news");
+              }}
+              className="duration-500 w-32 px-2 text-center py-3 rounded-md cursor-pointer text-white bg-violet-900 hover:bg-violet-800 active:bg-violet-950 hover:shadow-2xl"
+            >
+              View All
+            </div>
           </div>
-          <div className="my-own-custom-container">
+          <div className="my-own-custom-container carousel-with-custom-dots.css">
             <Carousel
-              // renderButtonGroupOutside={true}
-              // arrows={false}
-              // customButtonGroup={<ButtonGroup />}
-              // customRightArrow={<CustomRightArrow />}
-              swipeable={false}
-              draggable={false}
-              // showDots={true}
               responsive={responsive}
-              ssr={true}
-              infinite={true}
-              autoPlay={true}
-              keyBoardControl={true}
-              customTransition="all .5"
-              containerClass="carousel-container"
-              removeArrowOnDeviceType={"mobile"}
-              dotListClass="custom-dot-list-style"
-              itemClass="carousel-item-padding-40-px"
+              additionalTransfrom={0}
+              arrows
+              autoPlaySpeed={3000}
+              centerMode={false}
+              focusOnSelect={false}
+              infinite
+              keyBoardControl
+              minimumTouchDrag={80}
+              renderButtonGroupOutside={false}
+              renderDotsOutside={false}
+              showDots
+              slidesToSlide={1}
             >
               {Slides.map((item, i) => (
                 <a key={item.title + i} href={item.href}>
-                  <div className=" cursor-pointer group mx-2">
+                  <div className=" cursor-pointer group mx-2 py-6">
                     <div className="w-full h-full overflow-hidden relative">
                       <div className=" object-fill rounded-sm flex z-20 w-32 h-9 bg-white absolute top-3 md:top-6 left-[-5px]">
                         <p className="m-auto self-center font-bold">
@@ -375,7 +355,7 @@ export default function Home() {
                       <img
                         className="  w-96 h-64 group-hover:scale-110 duration-500"
                         src={item.image}
-                        alt=""
+                        alt={item.title}
                       />
                       <div className="flex w-32 h-10 lg:36 lg:h-16 bg-amber-700 absolute bottom-0 left-0 -translate-x-16 group-hover:translate-x-0 duration-500">
                         <div className="ml-auto absolute right-[-10px] self-center w-16 text-white text-xl lg:text-3xl">

@@ -15,8 +15,8 @@ export default function Careers() {
         </div>
       </div>
 
-      <div className="bg-[#eee] flex justify-center">
-        <div className="py-20  px-4 text-3xl w-full lg:w-[1170px] text-[#033360]">
+      <div className="bg-gray-100 flex justify-center">
+        <div className="py-20  px-4 text-3xl w-full lg:w-[1170px] text-blue-900">
           <div className="bg-white my-5 flex justify-between">
             <p className="self-center px-4">Engineering</p>
             <div className=" py-7 px-4">

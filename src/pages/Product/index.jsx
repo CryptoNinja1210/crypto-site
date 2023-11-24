@@ -6,7 +6,7 @@ export default function Product() {
     <Layout>
       <div>
         {/* <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] flex justify-center "> */}
-        <div className="z-[0] bg-gradient-to-tr to-lime-50 via-gray-200 from-violet-200 flex justify-center ">
+        <div className="z-[0] bg-gradient-to-tr to-lime-50 via-gray-200 from-blue-200 flex justify-center ">
           {/* <Slide duration={2000} direction="top"> */}
           <div className="text-gray-600 lg:w-[1170px] w-full  p-4 my-32">
             <p className="font-[Playfair] text-[2.5rem]  pb-5">
@@ -31,8 +31,8 @@ export default function Product() {
             }}
           /> */}
 
-      <div className="z-[999] bg-white flex justify-center">
-        <div className="py-32  px-4 text-3xl w-[1170px] text-[#033360]">
+      <div className="z-[999] bg-gray-50 flex justify-center">
+        <div className="py-10 md:py-32  px-4 text-3xl w-[1170px] text-[#033360]">
           <p className="pt-6 pb-5">Investment Philosophy</p>
           <p className="mb-3 text-base text-black">
             Exceptional levels of volatility and market drops of around 80%
@@ -55,44 +55,44 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="bg-[#eee] flex justify-center">
-        <div className="py-32  px-4 text-3xl w-[1170px] text-blue-900">
+      <div className="bg-gray-100 flex justify-center">
+        <div className="py-12 md:py-32  px-4 text-3xl w-[1170px] text-blue-900">
           <p className="pt-6 pb-5">Major Beneficiaries</p>
           <p className="mb-3 text-base text-black">
             Potential clients for our Crypto Market-Neutral program include
-            HNWI's who want to achieve an active exposure to the crypto market,
-            investors who already own cryptocurrencies and want to have an alpha
-            overlay on top of their long-term holdings, family offices, and
-            institutional investors. In particular, HNWI's usually do not have
-            the time and resources to perform financial research and constantly
-            monitor their investments, so it is preferable for them to delegate
-            the management of their capital to investment professionals. Family
-            offices can invest in the strategy in an optic of portfolio
-            diversification to benefit from investing in an investment product
-            with performance uncorrelated to their current holdings. Lastly,
-            institutional investors can allocate to a market-neutral crypto
-            investment product in a core-satellite approach to achieve exposure
-            to the cryptocurrency market through an actively managed investment
-            product.
+            HNWI&apos;s who want to achieve an active exposure to the crypto
+            market, investors who already own cryptocurrencies and want to have
+            an alpha overlay on top of their long-term holdings, family offices,
+            and institutional investors. In particular, HNWI&apos;s usually do
+            not have the time and resources to perform financial research and
+            constantly monitor their investments, so it is preferable for them
+            to delegate the management of their capital to investment
+            professionals. Family offices can invest in the strategy in an optic
+            of portfolio diversification to benefit from investing in an
+            investment product with performance uncorrelated to their current
+            holdings. Lastly, institutional investors can allocate to a
+            market-neutral crypto investment product in a core-satellite
+            approach to achieve exposure to the cryptocurrency market through an
+            actively managed investment product.
           </p>
         </div>
       </div>
 
       <div className="w-screen bg-white flex md:flex-row flex-col justify-center">
-        <div className="lg:ml-72 flex py-32 lg:justify-center px-4 w-full lg:w-[1170px] text-[#033360]">
+        <div className="lg:ml-72 flex py-12 md:py-32 lg:justify-center px-4 w-full lg:w-[1170px] text-blue-900">
           <div className="">
             <p className="text-3xl mt-[25.6px] mb-5">Summary of Terms</p>
-            <table className="mt-4" border={0} cellPadding={0}>
-              <tbody className="text-[1em]">
+            <table className="mt-4 text-gray-800" cellPadding={0}>
+              <tbody className="text-md ">
                 {Terms.map((item, i) => (
                   <tr
                     key={item.name + i}
-                    className="border-b-2 border-[#b3cce6]"
+                    className="border-[1px] border-gray-200 "
                   >
-                    <td className="py-[0.5em] pr-[2em] border-t-2 border-[#b3cce6] text-[1em] font-bold">
+                    <td className="p-3 pr-[2em] border-[1px] border-gray-200 text-[1em] font-bold">
                       {item.name}
                     </td>
-                    <td className="border-t-2 border-[#b3cce6]">
+                    <td className=" p-1 border-[1px] border-gray-200">
                       {item.content}
                     </td>
                   </tr>
@@ -111,7 +111,7 @@ export default function Product() {
       </div>
 
       <div className="bg-gray-50 flex justify-center">
-        <div className="flex md:flex-row flex-col w-[1170px] py-32  px-4  text-gray-800">
+        <div className="flex md:flex-row flex-col w-[1170px] py-12 md:py-32  px-4  text-gray-800">
           <div className="md:w-1/2">
             <p className="pt-6 pb-5 text-3xl ">Investment Technology</p>
             <p className="mb-3 text-base">

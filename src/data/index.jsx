@@ -46,32 +46,28 @@ export const Terms = [
       "Delaware Limited Pargnership | Cayman Islands Exempted Limited Partnership",
   },
   {
-    name: "Investment Period/Harvest",
-    content:
-      "3-year investment period from Final Close; 5-year harvest period + approved extension",
+    name: "Fund category",
+    content: "Cayman Master Feeder",
   },
   {
-    name: "Recycling Liquidity Events",
-    content:
-      "Unlimited recycling of liquid portfolio assets, includding post-listed tokens; 20% recycling of VC liquidity events",
+    name: "Asset Class",
+    content: "Multi stategy",
   },
   {
-    name: "oss-Fund Venture Investments",
-    content:
-      "On a pro rata, pari passu basis, subject to Limited Partner Advisory Committee approval",
+    name: "Investment Manager",
+    content: "P&A Limited",
   },
   {
     name: "Management Fee",
-    content: "2% of committed investment annually",
+    content: "2%",
   },
   {
-    name: "Carried Interest",
-    content: " 20% up to 40% net IRR, and 30% therafter",
+    name: "Performance Fee",
+    content: " 20% ",
   },
   {
-    name: "Waterfall",
-    content:
-      "European-100% return of called capital prior to playing carried intrest",
+    name: "Leverage",
+    content: "No Leverage is developed by the fund",
   },
 ];
 
@@ -119,8 +115,8 @@ export const FooterPages = [
   {
     name: "Careers",
     data: [
-      { name: "OVERVIEW", url: "/" },
-      { name: "OPEN POSITION", url: "/" },
+      { name: "OVERVIEW", url: "#" },
+      { name: "OPEN POSITION", url: "#" },
     ],
   },
   {
@@ -240,20 +236,20 @@ export const Companies = [
 
 export const Services = [
   {
-    name: "30+ projects served",
-    icon: "/icons/project_service_icon.png",
+    name: "projects served",
+    icon: "30+",
   },
   {
-    name: "100 + Exchanges ",
-    icon: "/icons/exchange_icon.png",
+    name: "Exchanges ",
+    icon: "100+",
   },
   {
-    name: "24/7 Daily Coverage ",
-    icon: "/icons/24daily_icon.jfif",
+    name: "Daily Coverage ",
+    icon: "24/7",
   },
   {
-    name: "4+ global offices",
-    icon: "/icons/global_office_icon.png",
+    name: "global offices",
+    icon: "4+",
   },
 ];
 

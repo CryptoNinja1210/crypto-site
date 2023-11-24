@@ -50,7 +50,7 @@ export default function Contacts() {
       </div>
 
       {/* Contact begins */}
-      <div className="bg-[#eee] w-full flex justify-center">
+      <div className="bg-gray-50 w-full flex justify-center">
         <div className="lg:w-[1170px] w-full p-4 mt-16 md:mt-24">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             {/* <div className=" text-[16px] mr-5">
@@ -62,19 +62,19 @@ export default function Contacts() {
             </div> */}
             <div className="text-[16px]  mb-3">
               <p className="text-3xl">Get in touch</p>
-              <p className="py-4">
+              {/* <p className="py-4">
                 Cactus Custoody is trusted qualified custodian for institutional
                 digital asset management and financial services.
-              </p>
+              </p> */}
               <p className="py-4">
                 Reach out to learn more about our services,schedule a demo, or
                 explore a partnership with us. Please complete the form below
                 and our sales team will be in touch shortly.
               </p>
-              <p className="py-4">
+              {/* <p className="py-4">
                 Cactus Custoody is trusted qualified custodian for institutional
                 digital asset management and financial services.
-              </p>
+              </p> */}
               <p className="py-4">
                 We will strictly protect your privacy in accordance with our{" "}
                 <a className="underline text-blue-400" href="#policy">
@@ -213,7 +213,6 @@ export default function Contacts() {
               Message (optional)
             </label>
             <InputBase
-              className="focus:outline-black"
               id="user_message1"
               multiline
               rows={7}
@@ -226,6 +225,7 @@ export default function Contacts() {
                 borderRadius: "10px",
                 background: "#F9FBFF",
                 boxSizing: "border-box",
+                "&:focused": { outline: "black" },
                 mt: "4px",
                 mb: "24px",
                 p: "11px 21px",
@@ -240,31 +240,31 @@ export default function Contacts() {
       {/* Contact ends */}
 
       {/* Email Contact begins */}
-      <div className="w-full bg-[#eee] flex justify-center">
+      <div className="w-full bg-slate-100 flex justify-center">
         <div className="py-12 px-4 w-full lg:w-[1170px]">
           <p className="text-2xl mt-8 mb-7 text-center text-black">
             Email Contact
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 ">
             <div className="bg-white my-3 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-500 ease-in-out border-[#eee] w-64 h-52 object-cover items-center">
-              <div className="m-3 p-5 bg-[#eee] rounded-full">
+              <div className="m-3 p-5 bg-gray-100 rounded-full">
                 <AttachMoneyIcon />
               </div>
               <div className="flex flex-col overflow-hidden text-center">
                 <p className="pt-5">Sales</p>
                 <a href="#sales" className="p-1 text-blue-400">
-                  sales@matrixport.com
+                  sales@p&a.com
                 </a>
               </div>
             </div>
-            <div className="bg-white my-3 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-500 ease-in-out border-[#eee] w-64 h-52 object-cover items-center">
-              <div className="m-3 p-5 bg-[#eee] rounded-full">
+            <div className="bg-white my-3 group flex flex-col px-2 py-4 mx-auto border-[1px] rounded-xl hover:scale-[120%] transition-all duration-500 ease-in-out border-gray-100 w-64 h-52 object-cover items-center">
+              <div className="m-3 p-5 bg-gray-100 rounded-full">
                 <SupportAgentIcon />
               </div>
               <div className="flex flex-col overflow-hidden text-center">
                 <p className="pt-5">Support(Help Center)</p>
                 <a href="#support" className="p-1 text-blue-400">
-                  support@matrixport.com
+                  support@p&a.com
                 </a>
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function Contacts() {
               <div className="flex flex-col overflow-hidden text-center">
                 <p className="pt-5">Press</p>
                 <a href="#press" className="p-1 text-blue-400">
-                  pr@matrixport.com
+                  pr@p&a.com
                 </a>
               </div>
             </div>

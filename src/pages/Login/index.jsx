@@ -80,7 +80,7 @@ const LoginPage = () => {
                       ? "/icons/pass-hide.svg"
                       : "/icons/pass-reveal.svg"
                   }
-                  alt=""
+                  alt="company logos"
                   className={`w-6 h-6 cursor-pointer ${isRevealed ? `` : ``}`}
                   onClick={handleClick}
                 />
@@ -94,7 +94,7 @@ const LoginPage = () => {
             Forgot password
           </div>
           <div
-            className="w-full h-11 bg-blue-500 hover:bg-blue-400 flex justify-center items-center leading-normal rounded-md text-white"
+            className="w-full h-11 bg-blue-600 hover:bg-blue-500 hover:shadow-lg active:bg-blue-700 flex justify-center items-center leading-normal rounded-md text-white duration-150"
             onClick={handleSignIn}
           >
             Login
