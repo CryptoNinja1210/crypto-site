@@ -128,7 +128,11 @@ const Header = () => {
                   onClick={() => goToPage("/")}
                   className="hover:text-blue-500  whitespace-nowrap cursor-pointer text-gray-600 text-2xl"
                 >
-                  P & A
+                  <img
+                    className="h-16 bg-transparent"
+                    src="/images/company.png"
+                    alt="company_logo"
+                  />
                 </div>
                 <div className="flex md:justify-center items-cneter ">
                   <div className="md:flex md:visible hidden items-cneter">
