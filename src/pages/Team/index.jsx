@@ -21,7 +21,7 @@ export default function Team() {
       <div className="bg-white flex justify-center">
         <div className="py-32  px-4 text-3xl w-full lg:w-[1170px] text-[#033360]">
           <p className="pt-6 pb-5">Leadership</p>
-          <p className="mb-3 text-base text-black">
+          <p className="mb-3 text-base text-gray-700">
             Our experienced team has the goal of delivering you superior and
             long-lasting value. We aim at understanding unique needs and offer
             you the right product.
@@ -50,7 +50,7 @@ export default function Team() {
             <div className="self-center col-span-2 px-4 lg:ml-[97.5px]">
               {/* <Fade duration={2000} triggerOnce damping={1}> */}
               <p className="my-5 text-4xl text-[#033360]">Dr. Peter</p>
-              <p className="my-4 text-[24px] text-black italic font-['Playfair Display']">
+              <p className="my-4 text-[24px] text-gray-700 italic font-['Playfair Display']">
                 Senior Advisor
               </p>
               {/* </Fade> */}

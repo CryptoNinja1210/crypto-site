@@ -15,68 +15,68 @@ export default function Careers() {
         </div>
       </div>
 
-      <div className="bg-gray-100 flex justify-center">
-        <div className="py-20  px-4 text-3xl w-full lg:w-[1170px] text-blue-900">
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Engineering</p>
+      <div className="bg-gray-100 flex justify-center text-gray-700">
+        <div className="py-20  px-4 text-3xl w-full lg:w-[1170px]">
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Engineering</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>
           </div>
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Compilance office</p>
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Compilance office</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>
           </div>
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Business development</p>
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Business development</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>
           </div>
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Head operations</p>
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Head operations</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>
           </div>
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Legal officer</p>
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Legal officer</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>
           </div>
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Software developer</p>
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Software developer</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>
           </div>
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Software Designer</p>
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Software Designer</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>
           </div>
-          <div className="bg-white my-5 flex justify-between">
-            <p className="self-center px-4">Portfolio</p>
+          <div className="my-5 flex justify-between border-gray-300 rounded-md border-[1px]">
+            <p className="self-center px-4 text-2xl">Portfolio</p>
             <div className=" py-7 px-4">
-              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-[#00306e] hover:opacity-70 hover:shadow-2xl">
+              <div className="text-sm duration-500 w-32 mx-4 px-3 my-auto py-3 rounded-md cursor-pointer text-white bg-blue-500 hover:opacity-80 hover:shadow-2xl">
                 LEARN MORE
               </div>
             </div>

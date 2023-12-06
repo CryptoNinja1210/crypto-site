@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <div className="shadow-2xl backdrop-filter w-full h-full flex lg:justify-center justify-between bg-gradient-to-tr to-gray-300 via-gray-200 from-gray-300">
-      <div className="lg:w-[1170px] w-full py-8 px-4 text-black">
+      <div className="lg:w-[1170px] w-full py-8 px-4 text-gray-600">
         {/* header */}
         <div className="md:flex md:justify-between text-center">
           <div className="text-[20px] py-3 md:py-0">P & A</div>
@@ -47,9 +47,7 @@ export default function Footer() {
         />
         <div className="flex flex-col md:flex-row-reverse py-8 md:px-4">
           <div className="md:w-1/3  px-[40px]">
-            <div className="mb-[10px] text-[20px]  text-blue-600">
-              Newsletter
-            </div>
+            <div className="mb-[10px] text-md  text-blue-400">Newsletter</div>
             <div className="py-1 text-[15px] ">
               Subscribe to our newsletter and updates .
             </div>
@@ -87,7 +85,7 @@ export default function Footer() {
             <div className="grid md:grid-cols-4 grid-cols-1 ">
               {FooterPages.map((item, i) => (
                 <div key={item.name + "_" + i} className="px-4">
-                  <div className="mb-[10px] text-[20px]  text-blue-600">
+                  <div className="mb-[10px] text-md  text-blue-400">
                     {item.name}
                   </div>
                   {item.data.map((data, i) => (

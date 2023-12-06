@@ -172,8 +172,8 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full bg-gray-50 flex justify-center">
-        <div className="py-24 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
-          <p className="text-blue-900 text-2xl md:text-3xl mt-6 mb-5 text-center md:text-start">
+        <div className="py-16 md:px-4 w-full lg:w-[1170px] md:m-0 m-4">
+          <p className="text-blue-900 text-2xl md:text-3xl my-6 text-center md:text-start">
             Our Competitive Advantage
           </p>
           {/* <div className="flex">
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             <div className="bg-white shadow-lg rounded-lg p-8 h-full">
               <p className="h-1/6 flex items-center text-2xl my-3">Team</p>
-              <p className=" ">
+              <p className="text-gray-500 ">
                 Our team comprises seasoned financial experts and crypto
                 enthusiasts from around the world, offering a comprehensive
                 understanding of global markets and local nuances. This
@@ -194,7 +194,7 @@ export default function Home() {
               <p className="h-1/6 flex items-center text-2xl my-3">
                 Advanced Analytical Tools
               </p>
-              <p className=" ">
+              <p className=" text-gray-500">
                 Leveraging cutting-edge data analytics and AI-driven
                 technologies, we stay ahead of market trends and identify
                 potential shifts in the cryptocurrency landscape. This enables
@@ -206,7 +206,7 @@ export default function Home() {
               <p className="h-1/6 flex items-center text-2xl my-3">
                 Strategic Risk Management
               </p>
-              <p className=" ">
+              <p className="text-gray-500 ">
                 Our holistic approach to risk management involves not only
                 market analysis but also regulatory assessment and security
                 evaluation. By proactively navigating regulatory changes and
@@ -219,7 +219,7 @@ export default function Home() {
               <p className="h-1/6 flex items-center text-2xl my-3">
                 Global Network and Partnerships
               </p>
-              <p className=" ">
+              <p className="text-gray-500 ">
                 We&apos;ve cultivated strong relationships with key players in
                 the cryptocurrency ecosystem, including exchanges, blockchain
                 projects, and industry influencers. This network grants us
@@ -232,50 +232,50 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full bg-gradient-to-tr to-gray-200 via-gray-300 from-gray-400 flex justify-center">
-        <div className="py-20 lg:pl-32 px-4 w-full lg:w-[1170px]">
-          <p className="text-2xl md:text-3xl text-center text-blue-900">
+        <div className="py-16 lg:pl-32 px-4 w-full lg:w-[1170px]">
+          <p className="text-2xl md:text-3xl text-center text-blue-400">
             Our Partners
           </p>
           <div className="flex">
-            <hr className="h-[5px] w-8 my-6 bg-blue-600 mx-auto" />
+            <hr className="h-[5px] w-8 my-6 bg-blue-400 mx-auto" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-300 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="w-52 h-16"
                 src="/images/partner1.png "
                 alt="partner"
               />
             </div>
-            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-300 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="w-52 h-16"
                 src="/images/partner2.jpg"
                 alt="partner"
               />
             </div>
-            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-300 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="w-52 h-16"
                 src="/images/partner3.png"
                 alt="partner"
               />
             </div>
-            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-300 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="w-52 h-16"
                 src="/images/partner4.png"
                 alt="partner"
               />
             </div>
-            <div className="flex items-center px-2 py-2 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex items-center px-2 py-2 mx-auto rounded-md border-2 border-blue-300 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-3 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="w-52 h-16 rounded-md"
                 src="/images/partner5.jfif"
                 alt="partner"
               />
             </div>
-            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-500 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
+            <div className="flex justify-center items-center px-2 py-4 mx-auto rounded-md border-2 border-blue-300 shadow-md hover:shadow-red-300 shadow-white bg-white transition duration-500 hover:-hue-rotate-90 hover:scale-110">
               <img
                 className="w-52 h-16"
                 src="/images/partner6.jfif"

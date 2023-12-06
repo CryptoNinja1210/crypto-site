@@ -23,7 +23,7 @@ export default function Market() {
       <div className="z-[999] bg-white flex justify-center">
         <div className="py-8 md:py-24  px-4 text-3xl w-[1170px] text-blue-900">
           <p className="my-6 pb-5">Crypto currency market maker </p>
-          <p className="mb-3 text-base text-black">
+          <p className="mb-3 text-base text-gray-700">
             We are committed to excellence in offering premium market-making
             services, continuously advancing our expertise in algorithmic
             trading, and seamlessly integrating state-of-the-art technology
@@ -37,11 +37,11 @@ export default function Market() {
 
       <div className="w-full bg-gray-200 flex justify-center">
         <div className="py-8 md:py-16 px-4 w-full lg:w-[1170px]">
-          <p className="text-2xl mt-6 mb-5 text-center text-black">
+          <p className="text-2xl mt-6 mb-5 text-center text-gray-700">
             Our Service
           </p>
           <div className="flex">
-            <hr className="h-[5px] w-8 my-4 bg-black mx-auto" />
+            <hr className="h-[5px] w-8 my-4 bg-gray-700 mx-auto" />
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">
             {Services.map((data) => (
@@ -74,7 +74,7 @@ export default function Market() {
 
       <div className="w-full bg-gray-100 flex justify-center">
         <div className="py-8 md:py-20 px-4 w-full lg:w-[1170px]">
-          <p className="text-2xl mb-10 text-center text-black">
+          <p className="text-2xl mb-10 text-center text-gray-700">
             Partner Exchanges
           </p>
           <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -100,7 +100,7 @@ export default function Market() {
             ))}
           </div>
           <div className="flex-col">
-            <hr className="h-[4px] w-32 my-10 bg-black mx-auto" />
+            <hr className="h-[4px] w-32 my-10 bg-gray-700 mx-auto" />
             <p className="font-bold text-center">AND 100+ MORE</p>
           </div>
         </div>

@@ -97,8 +97,8 @@ export const FooterPages = [
   {
     name: "About",
     data: [
-      { name: "TEAM", url: "/team" },
-      { name: "CAREERS", url: "/careers" },
+      { name: "Team", url: "/team" },
+      { name: "Careers", url: "/careers" },
       // { name: "INVESTORS APPROACH", url: "/" },
       // { name: "RISK MANAGEMENT", url: "/" },
       // { name: "TECHNOLOGY", url: "/" },
@@ -107,23 +107,23 @@ export const FooterPages = [
   {
     name: "Products",
     data: [
-      { name: "CRYPTO MARKET-NEUTRAL", url: "/product" },
-      { name: "CRYPTO MARKET", url: "/market" },
-      { name: "MAKING", url: "/product" },
+      { name: "Crypto Market-Neutral", url: "/product" },
+      { name: "Crypto Market", url: "/market" },
+      { name: "Making", url: "/product" },
     ],
   },
   {
-    name: "Careers",
+    name: "Conditions",
     data: [
-      { name: "OVERVIEW", url: "#" },
-      { name: "OPEN POSITION", url: "#" },
+      { name: "Terms of use", url: "/terms-of-use" },
+      { name: "Privacy policy", url: "/privacy-policy" },
     ],
   },
   {
     name: "Contact",
     data: [
       // { name: "INGUIRY", url: "/" },
-      { name: "CONTACTS", url: "/contacts" },
+      { name: "Contacts", url: "/contacts" },
       // { name: "SCHEDULE", url: "/" },
       // { name: "CALL", url: "/" },
     ],

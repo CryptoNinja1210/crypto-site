@@ -6,7 +6,7 @@ export default function Product() {
     <Layout>
       <div>
         {/* <div className="z-[0] bg-[url('/images/hftCrypto.jpg')] flex justify-center "> */}
-        <div className="z-[0] bg-gradient-to-tr to-lime-50 via-gray-200 from-blue-200 flex justify-center ">
+        <div className="z-[0] bg-gradient-to-tr to-violet-50 via-slate-200 from-blue-100 flex justify-center ">
           {/* <Slide duration={2000} direction="top"> */}
           <div className="text-gray-600 lg:w-[1170px] w-full  p-4 my-32">
             <p className="font-[Playfair] text-[2.5rem]  pb-5">
@@ -34,7 +34,7 @@ export default function Product() {
       <div className="z-[999] bg-gray-50 flex justify-center">
         <div className="py-10 md:py-32  px-4 text-3xl w-[1170px] text-[#033360]">
           <p className="pt-6 pb-5">Investment Philosophy</p>
-          <p className="mb-3 text-base text-black">
+          <p className="mb-3 text-base text-gray-700">
             Exceptional levels of volatility and market drops of around 80%
             present in the cryptocurrency space highlight the need for holders
             of cryptocurrencies and investors in the space for a market-neutral
@@ -48,7 +48,7 @@ export default function Product() {
             liquidity on several crypto exchanges to collect a spread through a
             market-neutral approach.
           </p>
-          <p className="mb-3 text-base text-black">
+          <p className="mb-3 text-base text-gray-700">
             Disclaimer: these investment products involve substantial risks of
             loss.
           </p>
@@ -58,7 +58,7 @@ export default function Product() {
       <div className="bg-gray-100 flex justify-center">
         <div className="py-12 md:py-32  px-4 text-3xl w-[1170px] text-blue-900">
           <p className="pt-6 pb-5">Major Beneficiaries</p>
-          <p className="mb-3 text-base text-black">
+          <p className="mb-3 text-base text-gray-700">
             Potential clients for our Crypto Market-Neutral program include
             HNWI&apos;s who want to achieve an active exposure to the crypto
             market, investors who already own cryptocurrencies and want to have

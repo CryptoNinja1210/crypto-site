@@ -242,7 +242,7 @@ export default function Contacts() {
       {/* Email Contact begins */}
       <div className="w-full bg-slate-100 flex justify-center">
         <div className="py-12 px-4 w-full lg:w-[1170px]">
-          <p className="text-2xl mt-8 mb-7 text-center text-black">
+          <p className="text-2xl mt-8 mb-7 text-center text-gray-700">
             Email Contact
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 ">

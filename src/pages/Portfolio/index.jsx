@@ -11,7 +11,7 @@ export default function Portfolio() {
     return (
       <div>
         <div className="text-[16px] mb-3">
-          <p className="text-[black]">
+          <p className="text-gray-700">
             For more information on our products, please fill out the form
             below. . A member of our team will be in touch with you shortly.
           </p>
@@ -78,12 +78,12 @@ export default function Portfolio() {
       </div>
 
       <div className="w-full bg-white flex justify-center">
-        <div className="py-8 md:py-20 px-4 w-full lg:w-[1170px]">
-          <p className="text-3xl font-bold mt-6 mb-5 text-center text-black">
+        <div className="py-8 md:py-16 px-4 w-full lg:w-[1170px]">
+          <p className="text-3xl font-bold mt-6 mb-5 text-center text-gray-700">
             Portfolio
           </p>
           <div className="flex">
-            <hr className="h-[5px] w-8 my-4 bg-black mx-auto" />
+            <hr className="h-[5px] w-8 my-4 bg-gray-500 mx-auto" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {Companies.map((data) => (
@@ -99,8 +99,10 @@ export default function Portfolio() {
                   />
                 </div>
                 <div className="flex flex-col overflow-hidden text-center">
-                  <p className="font-sans font-bold pt-5">{data.name}</p>
-                  <p className="mt-2 font-sans p-1 line-clamp-5">
+                  <p className="font-sans font-bold pt-5 text-gray-600">
+                    {data.name}
+                  </p>
+                  <p className="mt-2 font-sans p-1 line-clamp-5 text-gray-500">
                     {data.description}
                   </p>
                 </div>
